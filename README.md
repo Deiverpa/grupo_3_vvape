@@ -6,8 +6,7 @@ Integrantes: Deiver Peña Agualimpia , Estefanía Bautista R., Lizeth Carolina S
 Las siguientes páginas web fueron elegidas como itios de inspiración porqué transmitian la esencia y características importantes que consideramos debe tener nuestro e-commerce, tales como:
 
 - Un diseño llamativo y a la vanguardia que motiva a la interacción con el sitio web, a su vez, de una paleta de colores y fuentes modernas que van en tono con la temática de estas páginas.
-- Una disposición de elementos 
-- 
+- Una disposición de elementos amigable e intuitiva que hace que estos sitios sean fáciles de usar y navegar.
 
 https://www.vuse.com/co/es/informacion-de-la-empresa ; https://apolovapers.com.co/ ; https://www.diyejuicecolombia.com/ ; https://vaporkingdom.com.co/ ; https://lafabricavapestore.com/
 
