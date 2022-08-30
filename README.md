@@ -10,4 +10,4 @@ Las siguientes páginas web fueron elegidas como sitios de inspiración porque t
 
 https://www.vuse.com/co/es/informacion-de-la-empresa ; https://apolovapers.com.co/ ; https://www.diyejuicecolombia.com/ ; https://vaporkingdom.com.co/ ; https://lafabricavapestore.com/
 
-
+Tablero de trabajo: https://trello.com/b/8l2no1v1/vappe
