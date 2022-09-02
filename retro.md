@@ -4,7 +4,11 @@ Retrospectiva / Sprint 1
 - Definimos responsabilidades y dividimos tareas de manera equitativa.
 - Definimos una fecha de revisión conjunta.
 - Cumplimos los plazos de entrega.
-- Cumplimos con los acuerdos realizados
+- Cumplimos con los acuerdos realizados.
+- Apesar de que cada uno realizo su parte del trabajo por separado , cada uno procuro de mantener la misma linea estetica.
+-Todo el equipo se siente involucrado en el proceso.
+-Procuramos de trabajar de forma ordenada.
+
 
 2. Para hacer:
 - Reuniones de equipo con mayor frecuencia para ir revisando el progreso individual y pedir ayuda de ser necesario.
