@@ -13,6 +13,7 @@ Retrospectiva / Sprint 1
 
 3. Puntos negativos:
 - Intentamos establecer qué queremos hacer en el momento de reunirnos, debemos pensar individualmente en lo que queremos para realizar lluvias de ideas.
+- Dejar la timidez en el momento de expresar nuestras opiniones y ideas.
 
 4. Dejar de hacer:
 
