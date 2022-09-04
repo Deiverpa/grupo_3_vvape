@@ -1,0 +1,23 @@
+{
+  "name": "grupo_3_vvape",
+  "version": "1.0.0",
+  "description": "Acerca de VVAPE: Ofrecemos vapeadores y accesorios de vapeo con y sin nicotina para mayores de edad que quieran disfrutar de experiencias de sabor y vapeo emocionantes.\r Integrantes: Deiver Peña Agualimpia, Estefanía Bautista Ríos, Lizeth Carolina Sánchez Ortiz, Melissa Hurtado Álvarez.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Deiverpa/grupo_3_vvape.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Deiverpa/grupo_3_vvape/issues"
+  },
+  "homepage": "https://github.com/Deiverpa/grupo_3_vvape#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
