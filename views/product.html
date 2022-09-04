@@ -4,11 +4,103 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PRODUCT</title>
+    <title>vapeadores</title>
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-    HOLA
+    <!-- header -->
+   <header class="main-header">
+    <div class="main-header-top-bar">
+     <img src="/img/logo.jpeg" class="logo">
+         <h2 class="copy-header">
+         <i class="fa-solid fa-hand-holding-dollar"></i>
+         Comprá en cuotas y sin tarjeta de crédito
+     </h2>
+ </div>
+     <a href="0" class="hamburger-button">
+         <i class="fa-solid fa-bars"></i>
+     </a>
+ 
+    <nav class="main-navbar">
+     <ul class="left-navbar">
+         <li><a href="">Ofertas</a></li>
+         <li><a href="">Tiendas Oficiales</a></li>
+         <li><a href="">Vender</a></li>
+         <li><a href="">Ayuda</a></li>
+     </ul>
+     <ul class="right-navbar">
+         <li><a href="">
+             Creá tu cuenta</a><i class="fa-solid fa-id-card"></i></li>
+             
+         <li><a href="">
+             Ingresá</a><i class="fa-solid fa-arrow-right-from-bracket"></i></li>
+             
+         <li><a href="">
+             Mis compras</a><i class="fa-solid fa-cart-shopping"></i></li>
+                    
+     </ul>
+    </nav>
+ </header>
+ 
+ <!-- formulario -->
+ 
+ <form action="/crear-producto" method="post" class="createForm">
+     <div class="controlForm">
+         <label>Nombre del producto:</label>
+         <input type="text" name="nombre" class="control">
+     </div>
+     <div class="controlForm">
+         <label>Precio:</label>
+         <input type="text" name="precio" placeholder="123.56" class="control">
+     </div>
+     <div class="controlForm">
+         <label>Categoría:</label>
+         <select name="categoria" class="control">
+             <option value="hogar">Hogar</option>
+             <option value="electro">Electro</option>
+             <option value="indumentaria">Indumentaria</option>
+         </select>
+     </div>
+     <div class="controlForm">
+         <label>Ciudad:</label>
+         <select name="ciudad" class="control">
+             <option value="me">Medellín</option>
+             <option value="bo">Bogotá</option>
+             <option value="ca">Cali</option>
+         </select>
+     </div>
+     <div class="controlForm">
+         <label>Descripción:</label>
+         <textarea name="descripcion" class="control"></textarea>
+     </div>
+     <div class="controlForm">
+         <label>Está en oferta:</label>
+         <input type="radio" name="enOferta">
+     </div>
+     <button type="submit" class="button">Guardar</button>
+     <button type="reset" class="button">Borrar</button>
+     
+     
+ </form>
+ 
+ <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo</h2>
+ <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, molestiae labore libero iste ea sunt? Doloremque officiis molestias deserunt commodi eius aut non, obcaecati distinctio architecto repellat optio iure dolorum?</p>
+ <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor natus aut corrupti similique, nulla commodi quas quisquam, dolores quod aliquid assumenda. Libero inventore numquam quod, a aliquid aut error repudiandae?</p>
+ 
+ <article class="product">
+ <img src="/img/cellphone.jpg" alt="">
+ <h2>Samsung galaxy S10</h2>
+ </article>
+ <article class="product">
+     <img src="/img/tv.jpg" alt="">
+     <h2>Televisor 43"</h2>
+ </article>
+ <article class="product">
+         <img src="/img/cafetera.jpg" alt="">
+         <h2>Cafetera</h2>
+ </article>
+ 
+ 
 </body>
 </html>
