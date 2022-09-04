@@ -29,6 +29,7 @@ nav{
 @media (min-width: 362px) and (max-width: 769px){
     .navtitles{
         display: none;
+        margin-right: 2%;
     }
     .principalNav{
         display: flex;
@@ -48,10 +49,17 @@ nav{
         display: flex;
         padding: auto;
         align-items: center;
+        margin-right: 2%;
     }
     .navtitles li{
         padding-left: 50px;
         list-style: none;
+    }
+    .fa-user-circle{
+        padding-right: 8px;
+    }
+    .fa-shopping-cart{
+        padding-right: 8px;
     }
 }
 
@@ -85,7 +93,7 @@ footer a{
 .footTitles{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     margin-left: auto;
     margin-right: auto;
 }
@@ -95,4 +103,8 @@ footer a{
     list-style:none;
     padding-left: 20px;
     
+}
+
+form{
+    font-family: 'Nunito';
 }
