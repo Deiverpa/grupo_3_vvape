@@ -99,25 +99,112 @@ body p, .cantidad, .control{
 
 @media(min-width: 770px) {
     
-    .lastVisit, .offers{
+    .notitle{
         display: flex;
-        justify-content: space-around
+        margin: 16px;
         
     }
-    .card{
+       
+    .picture, .cardinfo{
+        display: flex;
         flex-wrap: wrap;
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-        max-width: 22%;
-        padding: 0%;
-        margin: 0%;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        align-self: stretch
+        justify-content: space-around;
+        height: 100%;
+        ;
         
-                   
     }
-    #burger{
-        display: none
+    .containerP{
+        
+        width: 100%;
+        padding: 20px;
+        justify-content: center;
+        
+        
+        
+    }
+    .controlForm{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-content: stretch;
+        justify-content: center;
+        align-items: baseline;
+    }
+    
+    .cantidad, .control{
+        display: flex;
+        flex-wrap: nowrap;
+        font-weight: bold;
+        margin-left: 16px;
+        font-size: 19px;
+        
+    }
+    .info{
+        display: flex;
+        width: 100%;
+    }
+    .precio, .carrito{
+        display: flex;
+        flex-wrap: wrap;
+        align-items:center;
+        justify-content: space-evenly;
+        padding: 0%;
+        width: 50%;
+        font-size: 19px;
+        font-weight: bold;
+    }
+    .description{
+        text-align: justify;
+        /* align-content:stretch; */
+        border-top: solid 2px rgba(21,31,40,0.5);
+        border-bottom: solid 2px rgba(21,31,40,0.5);
+        padding: 30px;
+        height: auto;
+        font-size: 21px;
+        
+
+    }
+    
+    
+    .envios{
+        font-size: 18px;
+        background-color: rgba(123,170,177,0.2);
+        padding: 60px;
+        text-align: justify ;
+               
+    }
+    .tituloenvios{
+        font-size: 16px;
+        margin: 20px;
+        
+    }
+    .condiciones{
+        font-style: italic;
+        font-size: 13px;
+        margin:20px
+    }
+    .dias{
+        margin: 20px
+    }
+    .card img{
+        
+        width: 90%;
+        justify-items: center;
+        align-items: center;
+        margin-bottom: 0; 
+        margin-top: 10px;
+            }
+    
+
+    .productname{
+        margin: 16px;
+        margin-bottom: 0;
+        font-size: 35px;
+        text-align:right;
+    }
+    .controlform{
+        display: flex;
+        flex-wrap: wrap;
     }
 }
 /* @media (min-width:362px) and (max-width:769px) {
@@ -167,31 +254,6 @@ body p, .cantidad, .control{
         margin-top: 10px
     }
 }
-
-@media(min-width: 770px) {
-    
-    .lastVisit, .offers{
-        display: flex;
-        justify-content: space-around
-        
-    }
-    .card{
-        flex-wrap: wrap;
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-        max-width: 22%;
-        padding: 0%;
-        margin: 0%;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        align-self: stretch
-        
-                   
-    }
-    #burger{
-        display: none
-    }
-}  */
-
 
 
 
