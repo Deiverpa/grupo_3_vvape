@@ -10,7 +10,7 @@ app.listen (3002, () =>{
     console.log ("servidor corriendo en el puerto 3002")
 });
 
-app.get('/',(req,res)=>{
+app.get('/product',(req,res)=>{
     res.sendFile(path.resolve(__dirname,'./views/product.html'))
 })
 app.get('/register',(req,res)=>{
