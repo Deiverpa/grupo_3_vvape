@@ -4,6 +4,9 @@
     display: flex;
 }
 
+.h2title{
+  font-family: Righteous;
+}
 .items {
     width: 60%;
 }
