@@ -1,4 +1,4 @@
-nav a{
+nav .navLink{
     list-style: none;
     text-decoration: none;
     color: #f0f0f0;
@@ -38,6 +38,13 @@ nav{
 }
 
 @media (min-width: 770px){
+    .principalNav{
+        height: 10vh;
+    }
+    .logoVvape{
+        height: 10vh;
+        width: min-content;
+    }
     #burger{
         display: none;
     }
@@ -107,4 +114,17 @@ footer a{
 
 form{
     font-family: 'Nunito';
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.principalForm{
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.formTitle{
+    font-family: 'Righteous';
 }
