@@ -94,7 +94,7 @@ input .carrito{
         text-align: justify ;
                
     }
-    .tituloenvios{
+    .tituloenvios, #truck{
         font-size: 16px;
         margin: 20px;
     }
@@ -139,6 +139,10 @@ input .carrito{
 
 @media(min-width: 770px) {
     
+    .navtitles li{
+        display: flex;
+        
+    }
     .detalles{
         display: none;
     }
@@ -217,7 +221,7 @@ input .carrito{
         text-align: justify ;
                
     }
-    .tituloenvios{
+    .tituloenvios, #truck{
         font-size: 16px;
         margin: 20px;
         
@@ -261,53 +265,10 @@ input .carrito{
         text-shadow: 2px 2px rgba(222,87,100,0.5)
     }
 }
+
+
 /* @media (min-width:362px) and (max-width:769px) {
     
-    .lastVisit, .offers{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly
-        
-    }
     
-    .card{
-        display: flex;
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-        flex-wrap: wrap;
-        max-width: 40%;
-        padding: 0%;
-        margin: 0%;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        justify-content: space-evenly;
-        align-content: space-between;
-        flex-grow: 0.5;
-        align-self: stretch
-                   
-    }
-    
-    #burger{
-        display: none
-    }
-
-    .superior{
-        display: flex;
-            flex-wrap: wrap
-            
-    }
-    .navContainer{
-        display: flex;
-        flex-wrap: wrap
-
-    }
-    .opciones{
-        
-        display: flex;
-        flex-wrap: wrap;
-        margin: 0;
-        margin-top: 10px
-    }
-}
-
 
 
