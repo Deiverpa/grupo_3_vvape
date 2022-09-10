@@ -11,7 +11,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Open+Sans&family=Righteous&display=swap" rel="stylesheet">
-    <title>login</title>
+    <title>Login</title>
 </head>
 <body>
     <!-- INICIO HEADER -->
@@ -22,8 +22,8 @@
             </div>
                 <ul class="navtitles">
                     <li class="navtitles-access"><i class="fas fa-user-circle"></i><a href="#">Acceso</a></li>
-                    <li><a href="#">Productos</a></li>
-                    <li><i class="fas fa-shopping-cart"></i><a href="#"></a>Carrito</a></li>
+                    <li><a href="/product">Productos</a></li>
+                    <li><i class="fas fa-shopping-cart"></i><a href="/shoppingcart">Carrito</a></li>
                 </ul>
             <i id="burger"class="fa-solid fa-bars navicon"></i>
         </nav>
@@ -33,24 +33,25 @@
     <main>
         <div class="principalForm">
         <form action="login.html" method="post">
-            <p>
+            <p class="formTitle">
                 Bienvenido de nuevo!
             </p>
             <p>
                 <label for="email">Email</label>
-                <input type="email" id="nombre" name="email">
             </p>
+            <input type="email" id="nombre" name="email">
             <p>
                 <label for="password">Contraseña</label>
-                <input type="password" id="nombre" name="password">
             </p>
+            <input type="password" id="nombre" name="password">
             <p>
             <button type="submit">Enviar</button>
+            </p>
         </form>
         </div>
     </main>
     <!-- INICIO FOOTER -->
-    <footer>
+    <footer class="footerForms">
         <ul class="footTitles">
             <li><a href="#">Terminos y condiciones</a></li>
             <li><a href="#">TLDR 2022</a></li>

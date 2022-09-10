@@ -1,0 +1,117 @@
+
+.content {
+    height: 100vh;
+    display: flex;
+}
+
+.h2title{
+  font-family: Righteous;
+}
+.items {
+    width: 60%;
+}
+
+.resume {
+    width: 40%;
+}
+
+.resume-description {
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.line {
+    width: 100%;
+    border: solid 1px;
+}
+
+.items, .resume {
+    padding: 1rem;
+}
+
+.card {
+    font-family: 'Nunito', sans-serif;
+    background: #fff;
+    border-radius: 10px;
+    margin: 1rem;
+    padding: 1rem;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  }
+
+  .card-content {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .card-content>img {
+    width: 20%;
+  }
+
+  .card-header {
+    width: 100%;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .card-description, .card-footer {
+    width: 100%;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .card-footer {
+    flex-direction: row;
+  }
+
+  .close {
+    border-radius: 100%;
+    border: solid 1px;
+    cursor: pointer;
+  }
+
+  .btn-cupon {
+    background-image: none;
+    background: #f8ab28;
+    border: 2px solid #f8ab28;
+    color: #2a2a2a;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 400;
+    padding: 14px 30px;
+    font-size: 1.2rem;
+    box-sizing: border-box;
+    vertical-align: middle;
+    padding: 0;
+    border-radius: 0;
+    margin: 0;
+  }
+
+  .btn-cupon>img {
+    width: 37px;
+  }
+
+  .input-cupon {
+    height: 37px;
+    width: 90%;
+  }
+
+  .btn-checkout {
+    padding: 1rem;
+    border-radius: 2rem;
+    background: #f8ab28;
+    border: none;
+    width: 20rem;
+    cursor: pointer;
+  }
+
+  .checkout {
+   display: flex;
+   justify-content: center;
+   font-family: 'Nunito', sans-serif;
+  }
