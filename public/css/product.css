@@ -12,9 +12,14 @@ body h4 {
     transition: transform 45ms;
  }
 
- h4:hover {
-    text-shadow: 2px 2px rgba(222,87,100,0.5)
-}
+ .detalles{
+    font-family: righteous;
+    margin-left: 16px;
+    margin-top: 48px;
+    margin-bottom: 0;
+    
+ }
+
 option{
     font-family: nunito;
     font-size: 16px;
@@ -44,16 +49,23 @@ input .carrito{
     font-weight: bold;
     background-color: transparent;
 }
-a:hover .carrito{
-    cursor: pointer;
-    background-color: rgba(168,132,141,0.5);
-    border-radius: 5%;
-         
-} 
+
 
 @media (max-width:769px){
      
-    
+    .detalles{
+        cursor: pointer;
+    }
+    .detalles:hover{
+        text-decoration: underline;
+    }
+    .description{
+        display:none;
+    }
+    .det:hover .description{
+        display:block;
+                       
+    }
     .info{
         display: flex;
     }
@@ -117,10 +129,19 @@ a:hover .carrito{
         font-weight: bold;
         margin-left: 16px;
     }
+    .controlForm{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+   
 }
 
 @media(min-width: 770px) {
     
+    .detalles{
+        display: none;
+    }
     .notitle{
         display: flex;
         margin: 16px;
@@ -132,6 +153,7 @@ a:hover .carrito{
         flex-wrap: wrap;
         justify-content: space-around;
         height: 100%;
+        width: fit-content;
         ;
         
     }
@@ -141,8 +163,10 @@ a:hover .carrito{
         padding: 50px;
         justify-content: center;
         
-        
-        
+               
+    }
+    .picture{
+        align-self: flex-start;
     }
     .controlForm{
         display: flex;
@@ -226,6 +250,15 @@ a:hover .carrito{
     .controlform{
         display: flex;
         flex-wrap: wrap;
+    }
+    a:hover .carrito{
+        cursor: pointer;
+        background-color: rgba(168,132,141,0.5);
+        border-radius: 5%;
+            
+    } 
+    h4:hover {
+        text-shadow: 2px 2px rgba(222,87,100,0.5)
     }
 }
 /* @media (min-width:362px) and (max-width:769px) {
