@@ -1,23 +1,29 @@
 Retrospectiva / Sprint 1
+
 1. Puntos positivos:
 - Llegamos a un acuerdo de lo que queríamos hacer, teniendo en cuenta todas las opciones propuestas.
 - Definimos responsabilidades y dividimos tareas de manera equitativa.
 - Definimos una fecha de revisión conjunta.
 - Cumplimos los plazos de entrega.
 - Cumplimos con los acuerdos realizados.
-- Apesar de que cada uno realizo su parte del trabajo por separado , cada uno procuro de mantener la misma linea estetica.
--Todo el equipo se siente involucrado en el proceso.
--Procuramos de trabajar de forma ordenada.
+- Apesar de que cada uno realizo su parte del trabajo por separado, cada uno procuro de mantener la misma linea estetica.
+- Todo el equipo se siente involucrado en el proceso.
+- Procuramos de trabajar de forma ordenada.
+- Se  activamente las opiniones de cada integrante del equipo, lo que permite comprender mejor los entregables del sprint.
 
 
-2. Para hacer:
+2. Empezar a implementar
 - Reuniones de equipo con mayor frecuencia para ir revisando el progreso individual y pedir ayuda de ser necesario.
 - Establecer un orden de prioridades para cada sprint.
 - Soltarnos más al momento de dar nuestras propias opiniones sobre el proyecto o responsabilidades.
+- Analizar individualmente las actividades o entregables que deben realizarse en cada sprint, previo a la primera reunión de planificación en equipo, de esta manera, cada integrante podría aportar más ideas y se podría  optimizar más el tiempo en las reuniones.
+
 
 3. Puntos negativos:
 - Intentamos establecer qué queremos hacer en el momento de reunirnos, debemos pensar individualmente en lo que queremos para realizar lluvias de ideas.
 - Dejar la timidez en el momento de expresar nuestras opiniones y ideas.
+- 
+
 
 4. Dejar de hacer:
 
