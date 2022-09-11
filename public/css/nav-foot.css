@@ -8,6 +8,7 @@ form .formTitle , :visited, :link{
     list-style: none;
     text-decoration: none;
     color: black;
+    text-align: center;
 }
 
 nav{
@@ -135,12 +136,14 @@ form{
     font-family: 'Nunito';
     margin-top: auto;
     margin-bottom: auto;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .principalForm{
     display: flex;
     justify-content: center;
-    margin-top: 5vh;
+    margin-top: 15vh;
     margin-bottom: 5vh;
 }
 
