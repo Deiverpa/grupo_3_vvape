@@ -34,7 +34,6 @@ body p, .cantidad, .control, .carrito{
     width: 100%;
 }
 
-
 a .carrito{
      
     transition: background-color .3s ease-out ;
@@ -43,6 +42,10 @@ a .carrito{
     place-self: center;
     text-decoration: none;
     border: none;
+    width: auto;
+    padding: 9px;
+    background-color: rgba(168,132,141,0.5);
+    border-radius: 2rem;
 }
 input .carrito{
     border: none;
@@ -263,7 +266,7 @@ input .carrito{
     }
     a:hover .carrito{
         cursor: pointer;
-        background-color: rgba(168,132,141,0.5);
+        background-color: rgba(222,87,100,0.5);
         border-radius: 2rem;
             
     } 
