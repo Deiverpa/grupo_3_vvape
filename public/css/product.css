@@ -75,7 +75,7 @@ input .carrito{
         align-items:center;
         justify-content: space-evenly;
         padding: 0%;
-        width: 50%;
+        width: 100%;
         font-size: 16px;
         font-weight: bold;
     }
@@ -88,24 +88,26 @@ input .carrito{
     
     
     .envios{
-        font-size: 16px;
-        background-color: rgba(123,170,177,0.2);
+               background-color: rgba(123,170,177,0.2);
         padding: 10px;
         text-align: justify ;
                
     }
     .tituloenvios, #truck{
-        font-size: 16px;
+        font-size: 1rem;
         margin: 20px;
     }
     .condiciones{
         font-style: italic;
-        font-size: 10px;
+        font-size: 0.6rem;
         margin:20px
     }
-    .dias{
-        margin: 20px
+    .dias, .gratis{
+        margin: 20px;
+        font-size: 0.8rem;
     }
+    
+    
     .card img{
         
         width: 90%;
@@ -134,11 +136,14 @@ input .carrito{
         align-items: center;
         justify-content: center;
     }
-   
+    a:hover .carrito{
+        cursor: pointer;
+        background-color: rgba(168,132,141,0.5);
+        border-radius: 2rem;
+            
+    } 
 }
-
-@media(min-width: 770px) {
-    
+@media (min-width:770px) {
     .navtitles li{
         display: flex;
         
@@ -146,31 +151,30 @@ input .carrito{
     .detalles{
         display: none;
     }
-    .notitle{
+    .noenvio{
         display: flex;
         margin: 16px;
         align-items: center;
     }
        
-    .picture, .cardinfo{
+    .picture, .det, .containerP{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
         height: 100%;
-        width: fit-content;
-        ;
-        
+                 
+    
     }
+    
     .containerP{
         
-        width: 100%;
         padding: 50px;
         justify-content: center;
         
                
     }
     .picture{
-        align-self: flex-start;
+        align-self: center;
     }
     .controlForm{
         display: flex;
@@ -215,24 +219,26 @@ input .carrito{
     }
         
     .envios{
-        font-size: 18px;
+        
         background-color: rgba(123,170,177,0.2);
         padding: 25px;
-        text-align: justify ;
+        text-align: center ;
+        
                
     }
     .tituloenvios, #truck{
-        font-size: 16px;
+        font-size: 1.5rem;
         margin: 20px;
         
     }
     .condiciones{
         font-style: italic;
-        font-size: 13px;
+        font-size: 0.8rem;
         margin:20px
     }
-    .dias{
-        margin: 20px
+    .dias, .gratis{
+        margin: 20px;
+        font-size: 1rem;
     }
     .card img{
         
@@ -258,17 +264,10 @@ input .carrito{
     a:hover .carrito{
         cursor: pointer;
         background-color: rgba(168,132,141,0.5);
-        border-radius: 5%;
+        border-radius: 2rem;
             
     } 
-    h4:hover {
+    .productname:hover {
         text-shadow: 2px 2px rgba(222,87,100,0.5)
     }
 }
-
-
-/* @media (min-width:362px) and (max-width:769px) {
-    
-    
-
-
