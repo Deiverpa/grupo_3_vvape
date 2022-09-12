@@ -31,17 +31,31 @@ h4.titulopromociones {
 
 .envío-atención-pagos
 
-.atención
-.envío
-.pagos
+.atención{
+    font-family: nunito
+}
+
+.envío{
+    font-family: nunito
+}
+
+.pagos{
+    font-family: nunito
+}
  
 .presentación-productos
-.vaper
-.escencia
-.suscripción
 
-     
-     
+.vaper img{
+    width:33%
+}
+.escencia img{
+    width:33%
+}
+
+.suscripción img{
+    width:33%
+}
+    
      
      
 @media (max-width:769px)) {
