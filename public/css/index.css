@@ -35,13 +35,30 @@ h4.titulopromociones {
 .cuerpo-promo{
     position: absolute;
     bottom: 0;
-    padding: 20px;
+    padding: 2rem;
     background-color: rgba(123,170,177,0.5);
     color:rgb(0, 0, 0);
     font-family: Righteous;
     text-align:center;
-    text-shadow: 1px 2px #45d7da;
+    
+}
 
+.btncompra-ahora{
+    padding: 0.3rem;
+    border-radius: 1rem;
+    background: #f8ab28;
+    border: none;
+    width: 15rem;
+    cursor: pointer;
+}
+
+.btn-pruébala{
+    padding: 0.3rem;
+    border-radius: 1rem;
+    background: #f8ab28;
+    border: none;
+    width: 15rem;
+    cursor: pointer;
 }
 
 .cuerpo-promo p, .cuerpo-promo a{
