@@ -85,6 +85,44 @@ h4.titulopromociones {
     text-align: center;
 }
 
+div.atención-envíos-pagos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow-y: auto;vc
+    padding-top: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+    overflow: hidden;
+}
+
+div.cuerpo-info{
+    margin: 1em;
+    padding: 0.5em;
+    color:black;
+    float: left;  
+}
+
+@media screen and (max-width:1200px) {
+    .atención-envíos-pagos{
+        width: 90%; 
+    }
+    .product-cards{
+        width: 90%
+    }
+    
+}
+
+@media screen and (max-width:600px) {
+    .atención-envíos-pagos{
+        width: 90%; 
+    }
+    .product-cards{
+        width: 90%
+    }
+}
+
+
 
 /*.slider-container {
   display: flex;
