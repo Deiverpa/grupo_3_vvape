@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VVAPE</title>
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/nav-foot.css">
+    <link rel="stylesheet" href="/public/css/normalize.css">
+    <link rel="stylesheet" href="/public/css/nav-foot.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="/public/css/home.css">
+    <link rel="stylesheet" href="/public/css/index.css">
     <script src="https://kit.fontawesome.com/3a5c03d4d2.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/bf896e772d.js" crossorigin="anonymous"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
@@ -20,12 +20,12 @@
     <header>
         <nav class="principalNav">
             <div class="logo">
-            <img class="logoVvape"src="/images/navlogo2.png" alt="">
+            <img class="logoVvape"src="/public/images/navlogo2.png" alt="">
             </div>
                 <ul class="navtitles">
                     <li class="navtitles-access"><i class="fas fa-user-circle"></i><a href="#">Acceso</a></li>
                     <li><i class="fa-solid fa-fire-flame-curved"></i><a href="/product">Productos</a></li>
-                    <li><i class="fas fa-shopping-cart"></i><a href="/shoppingcart">Carrito</a></li>
+                    <li><i class="fas fa-shopping-cart"></i><a href="/shoppingcart"></a>Carrito</li>
                 </ul>
             <i id="burger"class="fa-solid fa-bars navicon"></i>
         </nav>
@@ -42,22 +42,40 @@
 
         <!-- Sección para promocionar los productos en stock-->
         <section class="slider-container">
-            <article class="slider-item">
-                <img src="/public/images/experiencia.jpg" width="360" alt="experiencia">
-                <p>Encuentra los mejores productos para una experiencia de vapeo inolvidable</p>
-                <a class="productos" href="/views/product.html">COMPRAR AHORA</a>
+            <article class="img-promo">
+                <img src="/public/images/experiencia.jpg" alt="experiencia">
+                    <div class="cuerpo-promo">
+                        <p>Encuentra los mejores productos para una experiencia de vapeo inolvidable</p><br>
+                        <a class="COMPRAR" href="/views/product.html">COMPRAR AHORA</a>
+                    </div>
             </article>
-            <br>
-            <article class="slider-item">
-                <img src="/public/images/esencia-4.jpg" width="360" alt="nuevoproducto">
-                <p>¿Ya conoces nuestra nueva escencia?</p>
-                <a class="productos" href="/views/product.html">¡PRUÉBALA!</a>
-            </article>
+            <article class="img-promo">
+                <img src="/public/images/esencia-4.jpg" alt="nuevoproducto">
+                    <div class="cuerpo-promo">
+                        <p>¿Ya conoces nuestra nueva escencia?</p><br>
+                    <a class="" href="/escencias">¡PRUÉBALA!</a>
+                    </div>
+                </article>
         </section>
         <br>
 
         <!-- Información sobre atención, envío y pagos -->
         <section class="envío-atención-pagos">
+            <ul>
+                <li>
+                    <p>Atención en línea vía WhatsApp</a>
+                    <i class="atención"></i><a href="#">Atención en línea<br>vía WhatsApp</a>
+                </li>
+                <li>
+                    <p>Envíos Nacionales</a>
+                </li>
+                <li>
+                    <p>Flexibilidad de pago</p>
+                </li>
+
+
+
+            </ul>
             <div class="atención">
                 <p>Atención en línea <a class="WhatsApp" href="/lineawp">vía WhatsApp</a>
             </div>
@@ -70,25 +88,29 @@
         </section>
 
         <!-- Presentación de algunos productos -->
-        <section class="presentación-productos">
-            <article class="vaper">
-                <img src="/public/images/vaper-1.jpg" width="360" alt="Vaper">
-                <p>¿Aún no te decides?<br>Entra y averigua cual es tu vape favorito</p>
-                <a class="mivvape" href="/views/product.html">MI VVAPE</a>
+        <section class="product-cards">
+            <article class="card">
+                <img src="/public/images/vaper-1.jpg" alt="Vaper">
+                <div class="descripción">
+                    <p>¿Aún no te decides?<br>Entra y averigua cual es tu vape favorito</p>
+                    <a class="mivvape" href="/views/product.html">MI VVAPE</a>
+                </div>
             </article>
-            <br>
-            <article class="escencia">
-                <img src="/public/images/esencia-2.jpg" width="360" alt="Escencia">
-                <p>Vive una experiencia VVAPE</p>
-                <a class="escenciapromocion" href="/views/product.html">ESCENCIAS</a>
+            <article class="card">
+                <img src="/public/images/esencia-2.jpg" alt="Escencia">
+                <div class="descripción">
+                    <p>Vive una experiencia VVAPE</p>
+                    <a class="escenciapromocion" href="/views/product.html">ESCENCIAS</a>
+                </div>
             </article>
-            <br>
-            <article class="suscripción">
-                <img src="/public/images/suscripción.jpg" width="360" alt="Suscripción">
-                <p>¿Eres cliente frecuente?<br><a class="suscripción" href="/registro">Solicita tu Tarjeta de Membresía</a></p>
+            <article class="card">
+                <img src="/public/images/suscripción.jpg" alt="Suscripción">
+                <div class="descripción">
+                    <p>¿Eres cliente frecuente?</p>
+                    <a class="suscripción" href="/registro">Solicita tu Tarjeta de Membresía</a>
+                </div>
             </article>
         </section>
-
     </main>
    <!-- FIN MAIN -->
 
