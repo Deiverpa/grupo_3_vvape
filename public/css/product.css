@@ -7,7 +7,7 @@
 
 body h4 {
     font-family: Righteous;
-    font-size: 50px;
+    font-size: 3.125rem;
     text-shadow: none;
     transition: transform 45ms;
  }
@@ -22,7 +22,7 @@ body h4 {
 
 option{
     font-family: nunito;
-    font-size: 16px;
+    font-size: 1rem;
 }
 body p, .cantidad, .control, .carrito{
    font-family: nunito
@@ -71,6 +71,7 @@ input .carrito{
     }
     .info{
         display: flex;
+        margin-top: 10px;
     }
     .precio, .carrito{
         display: flex;
@@ -79,7 +80,7 @@ input .carrito{
         justify-content: space-evenly;
         padding: 0%;
         width: 100%;
-        font-size: 16px;
+        font-size: 1rem;
         font-weight: bold;
     }
     .description{
@@ -128,7 +129,7 @@ input .carrito{
     .productname{
         margin: 16px;
         margin-bottom: 10px;
-        font-size: 30px;
+        font-size: 1.875rem;
     }
     .cantidad{
         font-weight: bold;
@@ -145,6 +146,7 @@ input .carrito{
         border-radius: 2rem;
             
     } 
+
 }
 @media (min-width:770px) {
     .navtitles li{
@@ -193,7 +195,7 @@ input .carrito{
         flex-wrap: nowrap;
         font-weight: bold;
         margin-left: 16px;
-        font-size: 19px;
+        font-size: 1.188rem;
         
     }
     .info{
@@ -207,7 +209,7 @@ input .carrito{
         justify-content: space-evenly;
         padding: 0%;
         width: 100%;
-        font-size: 19px;
+        font-size: 1.188rem;
         font-weight: bold;
     }
     .description{
@@ -217,7 +219,7 @@ input .carrito{
         border-bottom: solid 2px rgba(21,31,40,0.5);
         padding: 70px;
         height: auto;
-        font-size: 21px;
+        font-size: 1.313rem;
         
     }
         
