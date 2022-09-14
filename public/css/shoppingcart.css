@@ -74,8 +74,8 @@
 
   .btn-cupon {
     background-image: none;
-    background: #f8ab28;
-    border: 2px solid #f8ab28;
+    background: #a8848d;
+    border: 2px solid #a8848d;
     color: #2a2a2a;
     cursor: pointer;
     display: inline-block;
@@ -101,7 +101,7 @@
   .btn-checkout {
     padding: 1rem;
     border-radius: 2rem;
-    background: #f8ab28;
+    background: #a8848d;
     border: none;
     width: 20rem;
     cursor: pointer;
