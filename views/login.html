@@ -33,27 +33,32 @@
     <!-- INICIO MAIN -->
     <main>
         <div class="principalForm">
+        <fieldset>
         <form action="login.html" method="post">
             <p class="formTitle">
                 ¡BIENVENIDO DE NUEVO!
             </p>
-            <fieldset>
+            <div class="flexForm">
             <p>
-                <label for="email">Email</label>
+                <label for="email">Email o Usuario:</label>
             </p>
-            <input type="email" id="nombre" name="email">
+            <input type="email" id="nombre" name="email" required autocomplete="on">
             <p>
-                <label for="password">Contraseña</label>
+                <label for="password">Contraseña:</label>
             </p>
-            <input type="password" id="nombre" name="password">
-            <p>
-            <button type="submit">ENVIAR</button>
-            </p>
-            <p >
-                <a class="formTitle" href="/register">¿NO ESTÁS REGISTRADO?</a>
-            </p>
-            </fieldset>
+            <input type="password" id="nombre" name="password" required autocomplete="on">
+            <p> <a id="formA" href="#"> ¿Olvidaste tu contraseña?  </a></p>
+            </div>
+            <a class="loginBtn" href="/shoppingcart"><input class="loginBtn" type="submit" href="/shoppingcart" value="INGRESAR"></a>
         </form>
+            <p class="formTitle2">
+                ¿NO ESTÁS REGISTRADO?
+            <p>
+                <a class="loginBtn" href="/register"><input class="loginBtn" type="submit" href="/register" value="REGÍSTRATE"></a>
+                </p>
+            </p>
+
+        </fieldset>
         </div>
     </main>
     <!-- INICIO FOOTER -->
