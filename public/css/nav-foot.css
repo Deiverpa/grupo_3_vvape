@@ -109,3 +109,51 @@ nav{
     margin: auto 5%;
 }
 
+/* ESTILOS FOOTER */
+
+.footerForms{
+    height: 10vh;
+    background-color: #151f28;
+    color: #f0f0f0;
+    display: flex;
+    justify-content: space-between;
+    position: fixed; 
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+footer{
+    height: 10vh;
+    background-color: #151f28;
+    color: #f0f0f0;
+    display: flex;
+    justify-content: space-between; 
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a{
+    list-style: none;
+    text-decoration: none;
+    color: #f0f0f0;
+    font-family: 'Nunito';
+}
+
+.footTitles{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footTitles li{
+    margin-left: auto;
+    margin-right: auto;
+    list-style:none;
+    padding-left: 20px;
+    
+}
+
+/* FINAL FOOTER */

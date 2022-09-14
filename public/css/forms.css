@@ -46,9 +46,12 @@ footer a{
 form{
     font-family: 'Nunito';
     margin-top: auto;
-    margin-bottom: auto;
     padding-left: 5%;
     padding-right: 5%;
+}
+
+.registerForm{
+    margin-bottom: 7vh;
 }
 
 .principalForm{
