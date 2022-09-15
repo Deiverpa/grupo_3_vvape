@@ -78,7 +78,7 @@
   .btn-cupon {
     background-image: none;
     background: rgba(222,87,100,0.5);
-    border: 2px solid #a8848d;
+    border: none;
     color: #2a2a2a;
     cursor: pointer;
     display: inline-block;
