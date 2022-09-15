@@ -28,9 +28,7 @@ h4.titulopromociones {
 .img-promo img{
     max-width: 100%;
     height: 100%;
-    padding: 10px
-    object-fit: contain;
-    border-radius: 12px
+    border-radius: 12px;
 }
 
 .cuerpo-promo{
@@ -78,10 +76,8 @@ h4.titulopromociones {
 }
 
 .card img{
-     max-width: 100%;
-     height: 70%;
-     padding: 10px
-    object-fit: contain;
+    max-width: 100%;
+    height: 70%;
 }
 
 .card{
@@ -143,7 +139,7 @@ div.atención-envíos-pagos{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    overflow-y: auto;vc
+    overflow-y: auto;
     padding-top: 10px;
     padding-left: 10%;
     padding-right: 10%;
@@ -200,6 +196,6 @@ a.atención{
         justify-content: space-between
     }
     
-       
+
 }
 
