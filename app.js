@@ -13,6 +13,9 @@ app.listen (3005, () =>{
 app.get('/product',(req,res)=>{
     res.sendFile(path.resolve(__dirname,'./views/product.html'))
 })
+app.get('/productindex',(req,res)=>{
+    res.sendFile(path.resolve(__dirname,'./views/productindex.html'))
+})
 app.get('/register',(req,res)=>{
     res.sendFile(path.resolve(__dirname,'./views/register.html'))
 })

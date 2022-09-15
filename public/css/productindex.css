@@ -1,0 +1,481 @@
+/* #f0f0f0 blanco rgba(240,240,240,0.5)
+#de5764 rosado rgba(222,87,100,0.5)
+#a8848d moradito rgba(168,132,141,0.5)
+#7baab1 azul oscur rgba(123,170,177,0.5)
+#45d7da azul claro rgba(69,215,218,0.5)
+#151f28 azul fondo rgba(21,31,40,0.5) */
+
+body{
+        font-family: 'nunito';
+        margin:0;
+        background-color: #ebebeb;
+               
+}
+
+ header{
+        background-color: #EAC926;
+        width: 100%;
+        
+    }
+
+title{
+    font-size: 24px;
+      
+}  
+.logo{
+    width: 100px;
+}
+.banner img{
+    width: 100%;
+}
+
+.precio{
+    font-size: 18px;
+    margin: 0;
+    flex-grow: 0.3;
+    
+    /*margin-left: 15px*/
+}
+
+.descuento{
+    font-size: 16px;
+    flex-grow: 0.7
+}
+
+.containerP{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-left: 15px;
+    margin-right: 15px;
+    
+
+}
+h4{
+    /* display: none; */
+    visibility: hidden;
+    }
+.card:hover h4{
+    visibility: visible;
+    /* display: block; */
+    font-size: 16px ;
+    color:  #666;
+    font-weight: normal;
+    margin: 0px;
+    margin-bottom: 15px;
+    padding: 15px;
+    transition: all 450ms;
+}
+.card:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+.card i{
+    transition: transform 3s
+
+}
+.card:hover i{
+    transform: rotate(-90deg);
+}
+
+
+h2{
+    color:  black;
+    margin-left: 16px;
+}
+.cuerpo{
+    font-size: 12px;
+    color:#666
+}
+
+.pie{
+    color: #666
+
+    
+}
+footer{
+    text-align: center;
+}
+
+#icon{
+    color:black
+}
+#icon2{
+    color:black;
+    background-color: white;
+    /*padding: 2px;*/
+    text-align: left;
+    width: 1em;
+    
+
+}
+#burger{
+    color:white;
+    background-color: #1259c3;
+    width: 2em;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 5px
+
+}
+.burger-menu{
+    
+    text-align: center;
+  
+}
+
+.fas{
+    color: #1259c3;
+    width: 2em;
+    margin-bottom: 10px;  
+}
+
+main{
+    margin:0 auto;
+    width: 90%;
+    background-color:#ebebeb;
+
+}
+
+
+.card{
+    margin-bottom: 10px;
+    padding: 15px;
+    margin-top: 10px;
+    align-content: normal;
+    
+}
+.cardinfo{
+    border-top: 1px solid #ebebeb;
+    background-color: white;
+    width: 100%;
+    position: relative
+   
+    
+}
+.card img {
+    
+    width:100%;
+    margin: 0 auto
+}
+.fa-truck{
+    color:#39b54a;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position:absolute;
+    right: 00px;
+    top: -20px;
+    
+        
+}
+.descuento{
+    color:#39b54a;
+    margin:0
+}
+
+@media (max-width: 361px){
+    
+    /* header{
+        width: 100%;
+    } */
+    .navContainer{
+        display:none
+    }
+    
+    h4{
+        display: none
+    }
+    #icon2{
+        margin-bottom: 0;
+        align-self: center;
+        padding: 10px;
+        padding-left: 0;
+    }
+    .contenedorLogo{
+        
+        display: flex;
+        flex-wrap: nowrap;
+        align-items:center;
+        justify-content: space-evenly;
+        align-self: center;
+        padding: 10%
+    }
+    .logo{
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap
+        
+    }
+    .logobarra{
+        display: flex;
+        width: 100vw;
+        justify-content: space-evenly;
+    }
+    
+    .barra{
+        display: flex;
+        flex-wrap: nowrap;
+        width: 50%;
+        border: white;
+        font-size: 13px;
+        height: fit-content;
+        align-self: center;
+       
+    }
+    .cuotas{
+        margin-top: 40px;
+        text-align: center
+        
+    }
+    
+    .fas fa-search{
+        display: flex;
+        flex-wrap: wrap;
+       align-self: center;
+       padding: 20%}
+
+.pie{
+    font-size: 1rem;
+}
+.copy{
+    margin-top: 10px;
+}
+}
+
+@media (min-width:362px) and (max-width:769px) {
+    
+    .lastVisit, .offers{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly
+        
+    }
+    
+    .card{
+        display: flex;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        flex-wrap: wrap;
+        max-width: 40%;
+        padding: 0%;
+        margin: 0%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        justify-content: space-evenly;
+        align-content: normal;
+        flex-grow: 0.5;
+        align-self: stretch
+                   
+    }
+    
+    #burger{
+        display: none
+    }
+    #icon2{
+        margin:0
+    }
+       .barrasuperior{
+        display: flex;
+        flex-wrap: nowrap;
+        width: auto;
+        padding: 20px;
+        justify-content: space-between;
+        
+    }
+    .logobarra{
+        display: flex;
+        width: 66%;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .logo{
+        /* width: fit-content */
+        display: flex;
+        flex-grow: 0.33;
+        /* justify-content: center; */
+        /* width: max-content; */
+        position: unset;
+        /* width: 200px; */
+    }
+    .barra, .cuotas{
+        display: flex;
+        height: fit-content;
+        align-self: center;
+        
+        /* flex-grow: 0.5; */
+           }
+   .cuotas{
+    font-size: 0.7rem;
+   }
+    .navContainer{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        font-size: small;
+
+
+    }
+    .navContainer li{
+        padding-left: 10px;
+    }
+    .opciones{
+        
+        display: flex;
+        flex-wrap: nowrap;
+        margin: 0;
+        margin-top: 10px;
+        list-style: none;
+        justify-content: space-between;
+    }
+    .barra{
+        justify-content: space-evenly;
+        flex-grow: 0.33;
+        align-self: center;
+    }
+    .pie{
+        font-size: 1rem;
+    }
+}
+
+@media(min-width: 770px) {
+    
+    .lastVisit, .offers{
+        display: flex;
+        justify-content: space-around
+        
+    }
+    .navContainer li{
+        padding-left: 10px;
+    }
+    /* .card{
+        flex-wrap: wrap;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        max-width: 22%;
+        padding: 0%;
+        margin: 0%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        align-self: auto;
+        align-content: stretch;
+        
+                   
+    } */
+    #burger{
+        display: none
+    }
+    .lastVisit, .offers{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly
+        
+    }
+    .pie{
+        font-size: 1rem;
+    }
+    
+    .card{
+        display: flex;
+        margin: 0%;
+        margin-bottom: 10px;
+        justify-content: space-evenly;
+        align-content: stretch;
+        flex-grow: 0.5;
+        align-self: stretch;
+        flex-wrap: wrap;
+        /* box-shadow: 0px 0px 10px rgb(100, 100, 100); */
+        max-width: 22%;
+        padding: 0%;
+        margin-top: 10px;
+               
+                   
+    }
+    
+        #icon2{
+        margin:0
+    }
+       .barrasuperior{
+        display: flex;
+        flex-wrap: nowrap;
+        width: auto;
+        padding: 20px;
+        justify-content: space-between;
+        
+    }
+    .logobarra{
+        display: flex;
+        width: 66%;
+        justify-content: space-evenly; 
+    }
+    form{
+        align-self: center;
+    }
+    .logo{
+        /* width: fit-content */
+        display: flex;
+        flex-grow: 0.33;
+        justify-content: space-evenly;
+        /* width: max-content; */
+        /* width: 200px; */
+    }
+    .barra, .cuotas{
+        display: flex;
+        height: fit-content;
+        align-self: center;
+        /* flex-grow: 0.5; */
+           }
+   
+    .navContainer{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        
+    }
+    .opciones{
+        
+        display: flex;
+        flex-wrap: nowrap;
+        margin: 0;
+        margin-top: 10px;
+        list-style: none;
+        justify-content: space-between;
+    }
+    .barra{
+        justify-content: space-evenly;
+        flex-grow: 0.33;
+    }
+.foo{
+    display: flex;
+    justify-content: space-around;
+    
+    
+}
+.pago, .envio, .seguridad{
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+
+}
+.fas{
+    align-items: center;
+}
+.copy{
+    margin: 30px;
+    font-size: 10px;
+    text-align: left;
+}
+.i{
+    transition: transform 3s
+
+}
+i:hover{
+    color:#39b54a
+}
+
+} 
