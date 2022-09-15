@@ -19,6 +19,9 @@ app.get('/register',(req,res)=>{
 app.get('/login',(req,res)=>{
     res.sendFile(path.resolve(__dirname,'./views/login.html'))
 })
+app.get('/index',(req,res)=>{
+    res.sendFile(path.resolve(__dirname,'./views/index.html'))
+})
 app.get('/shoppingcart',(req,res)=>{
     res.sendFile(path.resolve(__dirname,'./views/shoppingcart.html'))
     

@@ -1,7 +1,28 @@
-nav a{
+nav .navLink a, a:visited, a:link{
     list-style: none;
     text-decoration: none;
     color: #f0f0f0;
+}
+
+form #formA, :visited, :link{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+form .formTitle , :visited, :link{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+form .formTitle2 , :visited, :link{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    text-align: center;
 }
 
 nav{
@@ -25,6 +46,10 @@ nav{
         display: flex;
         justify-content: space-between;
     }
+    .footTitles li{
+        padding-right: 20px;
+        
+    }
 }
 @media (min-width: 362px) and (max-width: 769px){
     .navtitles{
@@ -35,9 +60,20 @@ nav{
         display: flex;
         justify-content: space-between;
     }
+    .footTitles li{
+        padding-right: 20px;
+        
+    }
 }
 
 @media (min-width: 770px){
+    .principalNav{
+        height: 10vh;
+    }
+    .logoVvape{
+        height: 10vh;
+        width: min-content;
+    }
     #burger{
         display: none;
     }
@@ -61,6 +97,9 @@ nav{
     .fa-shopping-cart{
         padding-right: 8px;
     }
+    .fa-fire-flame-curved{
+        padding-right: 8px;
+    }
 }
 
 #burger{
@@ -70,14 +109,26 @@ nav{
     margin: auto 5%;
 }
 
+/* ESTILOS FOOTER */
 
-footer{
+.footerForms{
     height: 10vh;
     background-color: #151f28;
     color: #f0f0f0;
     display: flex;
     justify-content: space-between;
     position: fixed; 
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+footer{
+    height: 10vh;
+    background-color: #151f28;
+    color: #f0f0f0;
+    display: flex;
+    justify-content: space-between; 
     left: 0;
     bottom: 0;
     width: 100%;
@@ -105,6 +156,4 @@ footer a{
     
 }
 
-form{
-    font-family: 'Nunito';
-}
+/* FINAL FOOTER */

@@ -7,17 +7,22 @@
 
 body h4 {
     font-family: Righteous;
-    font-size: 50px;
+    font-size: 3.125rem;
     text-shadow: none;
     transition: transform 45ms;
  }
 
- h4:hover {
-    text-shadow: 2px 2px rgba(222,87,100,0.5)
-}
+ .detalles{
+    font-family: righteous;
+    margin-left: 16px;
+    margin-top: 48px;
+    margin-bottom: 0;
+    
+ }
+
 option{
     font-family: nunito;
-    font-size: 16px;
+    font-size: 1rem;
 }
 body p, .cantidad, .control, .carrito{
    font-family: nunito
@@ -29,7 +34,6 @@ body p, .cantidad, .control, .carrito{
     width: 100%;
 }
 
-
 a .carrito{
      
     transition: background-color .3s ease-out ;
@@ -38,24 +42,36 @@ a .carrito{
     place-self: center;
     text-decoration: none;
     border: none;
+    width: auto;
+    padding: 9px;
+    background-color: rgba(168,132,141,0.5);
+    border-radius: 2rem;
 }
 input .carrito{
     border: none;
     font-weight: bold;
     background-color: transparent;
 }
-a:hover .carrito{
-    cursor: pointer;
-    background-color: rgba(168,132,141,0.5);
-    border-radius: 5%;
-         
-} 
+
 
 @media (max-width:769px){
      
-    
+    .detalles{
+        cursor: pointer;
+    }
+    .detalles:hover{
+        text-decoration: underline;
+    }
+    .description{
+        display:none;
+    }
+    .det:hover .description{
+        display:block;
+                       
+    }
     .info{
         display: flex;
+        margin-top: 10px;
     }
     .precio, .carrito{
         display: flex;
@@ -63,8 +79,8 @@ a:hover .carrito{
         align-items:center;
         justify-content: space-evenly;
         padding: 0%;
-        width: 50%;
-        font-size: 16px;
+        width: 100%;
+        font-size: 1rem;
         font-weight: bold;
     }
     .description{
@@ -76,24 +92,26 @@ a:hover .carrito{
     
     
     .envios{
-        font-size: 16px;
-        background-color: rgba(123,170,177,0.2);
+               background-color: rgba(123,170,177,0.2);
         padding: 10px;
         text-align: justify ;
                
     }
-    .tituloenvios{
-        font-size: 16px;
+    .tituloenvios, #truck{
+        font-size: 1rem;
         margin: 20px;
     }
     .condiciones{
         font-style: italic;
-        font-size: 10px;
+        font-size: 0.6rem;
         margin:20px
     }
-    .dias{
-        margin: 20px
+    .dias, .gratis{
+        margin: 20px;
+        font-size: 0.8rem;
     }
+    
+    
     .card img{
         
         width: 90%;
@@ -111,38 +129,57 @@ a:hover .carrito{
     .productname{
         margin: 16px;
         margin-bottom: 10px;
-        font-size: 30px;
+        font-size: 1.875rem;
     }
     .cantidad{
         font-weight: bold;
         margin-left: 16px;
     }
-}
+    .controlForm{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    a:hover .carrito{
+        cursor: pointer;
+        background-color: rgba(168,132,141,0.5);
+        border-radius: 2rem;
+            
+    } 
 
-@media(min-width: 770px) {
-    
-    .notitle{
+}
+@media (min-width:770px) {
+    .navtitles li{
+        display: flex;
+        
+    }
+    .detalles{
+        display: none;
+    }
+    .noenvio{
         display: flex;
         margin: 16px;
         align-items: center;
     }
        
-    .picture, .cardinfo{
+    .picture, .det, .containerP{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
         height: 100%;
-        ;
-        
+                 
+    
     }
+    
     .containerP{
         
-        width: 100%;
         padding: 50px;
         justify-content: center;
         
-        
-        
+               
+    }
+    .picture{
+        align-self: center;
     }
     .controlForm{
         display: flex;
@@ -158,7 +195,7 @@ a:hover .carrito{
         flex-wrap: nowrap;
         font-weight: bold;
         margin-left: 16px;
-        font-size: 19px;
+        font-size: 1.188rem;
         
     }
     .info{
@@ -172,7 +209,7 @@ a:hover .carrito{
         justify-content: space-evenly;
         padding: 0%;
         width: 100%;
-        font-size: 19px;
+        font-size: 1.188rem;
         font-weight: bold;
     }
     .description{
@@ -182,29 +219,31 @@ a:hover .carrito{
         border-bottom: solid 2px rgba(21,31,40,0.5);
         padding: 70px;
         height: auto;
-        font-size: 21px;
+        font-size: 1.313rem;
         
     }
         
     .envios{
-        font-size: 18px;
+        
         background-color: rgba(123,170,177,0.2);
         padding: 25px;
-        text-align: justify ;
+        text-align: center ;
+        
                
     }
-    .tituloenvios{
-        font-size: 16px;
+    .tituloenvios, #truck{
+        font-size: 1.5rem;
         margin: 20px;
         
     }
     .condiciones{
         font-style: italic;
-        font-size: 13px;
+        font-size: 0.8rem;
         margin:20px
     }
-    .dias{
-        margin: 20px
+    .dias, .gratis{
+        margin: 20px;
+        font-size: 1rem;
     }
     .card img{
         
@@ -227,54 +266,13 @@ a:hover .carrito{
         display: flex;
         flex-wrap: wrap;
     }
-}
-/* @media (min-width:362px) and (max-width:769px) {
-    
-    .lastVisit, .offers{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly
-        
-    }
-    
-    .card{
-        display: flex;
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-        flex-wrap: wrap;
-        max-width: 40%;
-        padding: 0%;
-        margin: 0%;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        justify-content: space-evenly;
-        align-content: space-between;
-        flex-grow: 0.5;
-        align-self: stretch
-                   
-    }
-    
-    #burger{
-        display: none
-    }
-
-    .superior{
-        display: flex;
-            flex-wrap: wrap
+    a:hover .carrito{
+        cursor: pointer;
+        background-color: rgba(222,87,100,0.5);
+        border-radius: 2rem;
             
-    }
-    .navContainer{
-        display: flex;
-        flex-wrap: wrap
-
-    }
-    .opciones{
-        
-        display: flex;
-        flex-wrap: wrap;
-        margin: 0;
-        margin-top: 10px
+    } 
+    .productname:hover {
+        text-shadow: 2px 2px rgba(69,215,218,0.5)
     }
 }
-
-
-

@@ -6,24 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/nav-foot.css">
+    <link rel="stylesheet" href="/css/forms.css">
     <script src="https://kit.fontawesome.com/3a5c03d4d2.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/bf896e772d.js" crossorigin="anonymous"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Open+Sans&family=Righteous&display=swap" rel="stylesheet">
-    <title>login</title>
+    <title>Login</title>
 </head>
 <body>
     <!-- INICIO HEADER -->
     <header>
         <nav class="principalNav">
             <div class="logo">
-            <img class="logoVvape"src="/images/navlogo2.png" alt="">
+                <a href="/index"><img class="logoVvape"src="/images/navlogo2.png" alt="logo"></a>
             </div>
                 <ul class="navtitles">
                     <li class="navtitles-access"><i class="fas fa-user-circle"></i><a href="#">Acceso</a></li>
-                    <li><a href="#">Productos</a></li>
-                    <li><i class="fas fa-shopping-cart"></i><a href="#"></a>Carrito</a></li>
+                    <li><i class="fa-solid fa-fire-flame-curved"></i><a href="/product">Productos</a></li>
+                    <li><i class="fas fa-shopping-cart"></i><a href="/shoppingcart">Carrito</a></li>
                 </ul>
             <i id="burger"class="fa-solid fa-bars navicon"></i>
         </nav>
@@ -32,28 +33,39 @@
     <!-- INICIO MAIN -->
     <main>
         <div class="principalForm">
+        <fieldset>
         <form action="login.html" method="post">
-            <p>
-                Bienvenido de nuevo!
+            <p class="formTitle">
+                ¡BIENVENIDO DE NUEVO!
             </p>
+            <div class="flexForm">
             <p>
-                <label for="email">Email</label>
-                <input type="email" id="nombre" name="email">
+                <label for="email">Email o Usuario:</label>
             </p>
+            <input type="email" id="nombre" name="email" required autocomplete="on">
             <p>
-                <label for="password">Contraseña</label>
-                <input type="password" id="nombre" name="password">
+                <label for="password">Contraseña:</label>
             </p>
-            <p>
-            <button type="submit">Enviar</button>
+            <input type="password" id="nombre" name="password" required autocomplete="on">
+            <p> <a id="formA" href="#"> ¿Olvidaste tu contraseña?  </a></p>
+            </div>
+            <a class="loginBtn" href="/shoppingcart"><input class="loginBtn" type="submit" href="/shoppingcart" value="INGRESAR"></a>
         </form>
+            <p class="formTitle2">
+                ¿NO ESTÁS REGISTRADO?
+            <p>
+                <a class="loginBtn" href="/register"><input class="loginBtn" type="submit" href="/register" value="REGÍSTRATE"></a>
+                </p>
+            </p>
+
+        </fieldset>
         </div>
     </main>
     <!-- INICIO FOOTER -->
-    <footer>
+    <footer class="footerForms">
         <ul class="footTitles">
-            <li><a href="#">Terminos y condiciones</a></li>
-            <li><a href="#">TLDR 2022</a></li>
+            <li><a href="#">Términos y condiciones</a></li>
+            <li><a href="#">Digital House 2022</a></li>
             <li><a href="#">VVAPE - DH</a></li>
         </ul>
     </footer>
