@@ -8,7 +8,7 @@
 body{
         font-family: 'nunito';
         margin:0;
-        background-color: #ebebeb;
+        background-color: white
                
 }
 
@@ -59,7 +59,8 @@ h4{
 }
 
 .card:hover{
-    box-shadow: 0px 0px 10px rgb(168,132,141);
+    box-shadow: 0px 0px 10px rgb(222,87,100);
+    
 }
 
 .card:hover i{
@@ -81,7 +82,7 @@ h2{
 main{
     margin:0 auto;
     width: 90%;
-    background-color:#ebebeb;
+    background-color:white;
 
 }
 
@@ -125,7 +126,7 @@ main{
 
 @media (min-width:362px) and (max-width:769px) {
     
-    .lastVisit{
+    .productinf{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly
@@ -152,7 +153,7 @@ main{
 
 @media(min-width: 770px) {
     
-    .lastVisit{
+    .productinf{
         display: flex;
         justify-content: space-around
         
@@ -161,7 +162,7 @@ main{
         padding-left: 10px;
     }
    
-    .lastVisit{
+    .productinf{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly
