@@ -7,6 +7,10 @@
 .h2title{
   font-family: Righteous;
 }
+h1{
+  font-family: Righteous;
+  margin-left: 16px;
+}
 .items {
     width: 60%;
 }
@@ -37,8 +41,12 @@
     border-radius: 10px;
     margin: 1rem;
     padding: 1rem;
-    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    display: flex;
+    border: solid rgba(0, 0, 0, 0.062) 1px;
   }
+.card:hover{
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
 
   .card-content {
     display: flex;
@@ -111,6 +119,7 @@
     border: none;
     width: 20rem;
     cursor: pointer;
+    font-weight: bold;
   }
   .btn-checkout:hover{
     background-color: rgba(168,132,141,0.5);
@@ -120,4 +129,7 @@
    display: flex;
    justify-content: center;
    font-family: 'Nunito', sans-serif;
+  }
+  .subtitle{
+    font-weight: bold;
   }
