@@ -25,12 +25,11 @@ h4.titulopromociones:hover {
 }
 
 .img-promo{
-    margin-right: 1rem;
     position: relative;
 }
 
 .img-promo img{
-    max-width: 100%;
+    max-width: 86%;
     height: 100%;
     border-radius: 12px;
 }
@@ -78,6 +77,11 @@ h4.titulopromociones:hover {
     overflow-y: auto;
 }
 
+article.card{
+    align-items: center;
+
+}
+
 .product-cards{
     WIDTH: 100%;
     display: flex;
@@ -113,7 +117,6 @@ h4.titulopromociones:hover {
     text-align: center;
     font-family: Righteous;
     font-size: 20px;
-
 }
 
 .descripción p, .descripción a{
@@ -221,6 +224,7 @@ a.atención{
     .atención-envíos-pagos{
         width: 78%; 
     }
+
     .product-cards {
         WIDTH: 100%;
         display: flex;
@@ -240,6 +244,7 @@ a.atención{
         display: flex;
         flex-direction: column;
         align-items: center;
+        border-radius: 12px;
     }
 
     .card img {
@@ -253,11 +258,11 @@ a.atención{
         align-items: center;
         width: 78%;
         height: 57%;
+        align-items: flex-start;
     }
 
-    div.product-cards{
+    .product-cards{
         width: 87%;
-        
     }
 
     div.cuerpo-info {
@@ -272,6 +277,15 @@ a.atención{
         text-align: center;
         color: rgba(66, 109, 116, 0.5);
         font-size: 0.9em;
+    }
+
+    article.card{
+        align-items: center;
+    }
+   
+    .img-promo{
+        position: relative;
+        
     }
 }
 
