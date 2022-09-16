@@ -11,7 +11,11 @@ h4.titulopromociones {
     font-family: Righteous;
     font-size: 20px;
     text-align:center;
-    text-shadow: 1px 2px #45d7da;
+    
+}
+
+h4.titulopromociones:hover {
+    text-shadow: 2px 2px rgba(69,215,218,0.5)
 }
 
 .slider-container{
@@ -50,6 +54,10 @@ h4.titulopromociones {
     border: none;
     width: 15rem;
     cursor: pointer;
+}
+
+.btncompra-ahora:hover{
+    background-color: black;
 }
 
 .btn-pruébala{
