@@ -7,6 +7,9 @@
 
 main{
     height: 100vh;
+    }
+section{
+    margin-top: 50px;
 }
 body{
         font-family: 'nunito';
@@ -14,7 +17,9 @@ body{
         background-color: white
                
 }
-
+h3{
+    text-align: end;
+  }
 
 
 title{
@@ -62,7 +67,7 @@ h4{
 }
 
 .card:hover{
-    box-shadow: 0px 0px 10px rgb(222,87,100);
+    box-shadow: 0px 0px 10px rgb(21,31,40);
     
 }
 
@@ -95,20 +100,23 @@ main{
     padding: 15px;
     margin-top: 10px;
     align-content: normal;
+    border-radius: 1rem;
     
 }
 .cardinfo{
     border-top: 1px solid #ebebeb;
     background-color: white;
     width: 100%;
-    position: relative
+    position: relative;
+    border-radius: 1rem;
    
     
 }
 .card img {
     
     width:100%;
-    margin: 0 auto
+    margin: 0 auto;
+    border-radius: 1rem;
 }
 
 

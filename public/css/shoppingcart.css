@@ -52,6 +52,9 @@ h1{
   .card-content {
     display: flex;
     flex-direction: row;
+     }
+  img{
+    border-radius: 1rem;
   }
 
   .card-content>img {
@@ -83,10 +86,11 @@ h1{
     border: solid 1px;
     cursor: pointer;
   }
+  
 
   .btn-cupon {
     background-image: none;
-    background: rgba(222,87,100,0.5);
+    background: rgba(168,132,141,0.5);
     border: none;
     color: #2a2a2a;
     cursor: pointer;
@@ -101,7 +105,7 @@ h1{
     margin: 0;
   }
   .btn-cupon:hover{
-    background-color: rgba(168,132,141,0.5);
+    background-color: rgba(222,87,100,0.5);
   }
 
   .btn-cupon>img {
@@ -116,14 +120,14 @@ h1{
   .btn-checkout {
     padding: 1rem;
     border-radius: 2rem;
-    background: rgba(222,87,100,0.5);
+    background: rgba(168,132,141,0.5);
     border: none;
     width: 20rem;
     cursor: pointer;
     font-weight: bold;
   }
   .btn-checkout:hover{
-    background-color: rgba(168,132,141,0.5);
+    background-color: rgba(222,87,100,0.5);
   }
 
   .checkout {
@@ -155,5 +159,8 @@ h1{
     }
     .items{
       width: 100%;
+    }
+    h1:hover{
+      text-shadow: 2px 2px rgba(69,215,218,0.5)
     }
   }
