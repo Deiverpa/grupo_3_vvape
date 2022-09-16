@@ -38,7 +38,6 @@ h4.titulopromociones:hover {
 .cuerpo-promo{
     position: absolute;
     bottom: 0;
-    padding: 0.8rem;
     background-color: rgba(123,170,177,0.5);
     color:rgb(0, 0, 0);
     font-family: Righteous;
@@ -52,7 +51,6 @@ h4.titulopromociones:hover {
     border-radius: 1rem;
     background: #45d7da;
     border: none;
-    width: 15rem;
     cursor: pointer;
 }
 
@@ -65,7 +63,6 @@ h4.titulopromociones:hover {
     border-radius: 1rem;
     background: #45d7da;
     border: none;
-    width: 15rem;
     cursor: pointer;
 }
 
