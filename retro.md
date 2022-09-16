@@ -1,3 +1,9 @@
+Retrospectiva 
+
+https://app.scatterspoke.com/invitation/cl82e1rft1082860nk42yyt0135
+
+
+
 Retrospectiva / Sprint 1
 
 1. Puntos positivos:
@@ -23,5 +29,3 @@ Retrospectiva / Sprint 1
 - Intentamos establecer qué queremos hacer en el momento de reunirnos, debemos pensar individualmente en lo que queremos para realizar lluvias de ideas.
 - Dejar la timidez en el momento de expresar nuestras opiniones y ideas.
  
-Retrospectiva / Sprint 
-LINK: https://app.scatterspoke.com/board/cl82e3naj1093060nk4er77um5p
