@@ -11,7 +11,11 @@ h4.titulopromociones {
     font-family: Righteous;
     font-size: 20px;
     text-align:center;
-    text-shadow: 1px 2px #45d7da;
+    
+}
+
+h4.titulopromociones:hover {
+    text-shadow: 2px 2px rgba(69,215,218,0.5)
 }
 
 .slider-container{
@@ -34,7 +38,6 @@ h4.titulopromociones {
 .cuerpo-promo{
     position: absolute;
     bottom: 0;
-    padding: 0.8rem;
     background-color: rgba(123,170,177,0.5);
     color:rgb(0, 0, 0);
     font-family: Righteous;
@@ -46,19 +49,25 @@ h4.titulopromociones {
 .btncompra-ahora{
     padding: 0.3rem;
     border-radius: 1rem;
-    background: #45d7da;
+    background-color: rgba(168,132,141,0.5);
     border: none;
-    width: 15rem;
     cursor: pointer;
+}
+
+.btncompra-ahora:hover{
+    background-color: #45d7da;
 }
 
 .btn-pruébala{
     padding: 0.3rem;
     border-radius: 1rem;
-    background: #45d7da;
+    background:rgba(168,132,141,0.5);
     border: none;
-    width: 15rem;
     cursor: pointer;
+}
+
+.btn-pruébala:hover{
+    background-color: #45d7da;
 }
 
 .cuerpo-promo p, .cuerpo-promo a{
@@ -78,6 +87,7 @@ h4.titulopromociones {
 .card img{
     max-width: 100%;
     height: 70%;
+    border-radius: 12px
 }
 
 .card{
@@ -111,28 +121,40 @@ h4.titulopromociones {
 .btn-vvape{
     padding: 0.2rem;
     border-radius: 1rem;
-    background: #45d7da;
+    background: rgba(168,132,141,0.5);
     border: none;
     width: 15rem;
     cursor: pointer;
+}
+
+.btn-vvape:hover{
+    background-color:#45d7da;
 }
 
 .btn-escencias{
     padding: 0.2rem;
     border-radius: 1rem;
-    background: #45d7da;
+    background: rgba(168,132,141,0.5);
     border: none;
     width: 15rem;
     cursor: pointer;
 }
 
+.btn-escencias:hover{
+    background-color:#45d7da;
+}
+
 .btn-membresía{
     padding: 0.2rem;
     border-radius: 1rem;
-    background: #45d7da;
+    background: rgba(168,132,141,0.5);
     border: none;
     width: 15rem;
     cursor: pointer;
+}
+
+.btn-membresía:hover{
+    background-color:#45d7da;
 }
 
 div.atención-envíos-pagos{
