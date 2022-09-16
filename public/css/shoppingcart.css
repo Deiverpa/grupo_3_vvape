@@ -1,4 +1,6 @@
-
+main{
+  margin: 16px;
+}
 .content {
         display: flex;
 }
@@ -150,5 +152,8 @@ h1{
     .all{
       display: flex;
       height: 100vh;
+    }
+    .items{
+      width: 100%;
     }
   }
