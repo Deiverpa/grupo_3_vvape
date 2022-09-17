@@ -40,7 +40,6 @@ h1{
     font-family: 'Nunito', sans-serif;
     background: #fff;
     border-radius: 10px;
-    margin: 1rem;
     padding: 1rem;
     display: flex;
     border: solid rgba(0, 0, 0, 0.062) 1px;
@@ -52,6 +51,7 @@ h1{
   .card-content {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
      }
   img{
     border-radius: 1rem;
@@ -162,5 +162,14 @@ h1{
     }
     h1:hover{
       text-shadow: 2px 2px rgba(69,215,218,0.5)
+    }
+    .resume{
+      width: 46%;
+    }
+    .content{
+      width: 50%;
+    }
+    .items{
+      padding: 0;
     }
   }

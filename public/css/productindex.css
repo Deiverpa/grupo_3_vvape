@@ -46,11 +46,11 @@ title{
     
 
 }
-h4{
+.precio{
     /* display: none; */
     visibility: hidden;
     }
-.card:hover h4{
+.card:hover .precio{
     visibility: visible;
     /* display: block; */
     font-size: 16px ;
@@ -198,3 +198,8 @@ main{
     
    
 } 
+@media (min-width:770px) and (max-width:1307px){
+    main{
+        height: 76vh;
+    }
+}
