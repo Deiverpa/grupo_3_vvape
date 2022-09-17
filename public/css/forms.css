@@ -61,10 +61,24 @@ form{
     margin-bottom: 5vh;
 }
 
+.remindUserC{
+    display: flex;
+    margin-top: 5%;
+
+}
+
+#remindUser{
+    margin-left: 10%;
+}
+
 .formTitle{
     font-family: 'Righteous';
     font-size: 1.3rem;
     font-weight: bold;
+}
+
+.formTitle:hover{
+    text-shadow: 2px 2px rgb(69 215 218 / 50%);
 }
 
 .formTitle2{
@@ -78,6 +92,7 @@ form{
 
 fieldset{
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
 }
 
 .registerF{
