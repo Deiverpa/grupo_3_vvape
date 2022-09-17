@@ -43,6 +43,7 @@ h1{
     padding: 1rem;
     display: flex;
     border: solid rgba(0, 0, 0, 0.062) 1px;
+    margin-top: 10px;
   }
 .card:hover{
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
@@ -125,6 +126,7 @@ h1{
     width: 20rem;
     cursor: pointer;
     font-weight: bold;
+    margin-top: 10px;
   }
   .btn-checkout:hover{
     background-color: rgba(222,87,100,0.5);

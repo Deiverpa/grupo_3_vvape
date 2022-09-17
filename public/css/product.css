@@ -278,8 +278,3 @@ input .carrito{
         text-shadow: 2px 2px rgba(69,215,218,0.5)
     }
 }
-@media (min-width:361px) and (max-width:527px){
-    main{
-        height: 86vh;
-    }
-}
