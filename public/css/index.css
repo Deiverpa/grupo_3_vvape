@@ -12,7 +12,9 @@ h4.titulopromociones {
     font-size: 22px;
     text-align:center;
 }
-
+p{
+    font-family: nunito;
+}
 h4.titulopromociones:hover {
     text-shadow: 2px 2px rgba(69,215,218,0.5)
 }
@@ -25,12 +27,16 @@ h4.titulopromociones:hover {
 
 .img-promo{
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 .img-promo img{
     max-width: 86%;
     height: 100%;
     border-radius: 12px;
+    display: flex;
+    justify-content: center;
 }
 
 .cuerpo-promo{
@@ -83,7 +89,7 @@ article.card{
 .product-cards{
     WIDTH: 100%;
     display: flex;
-    max-width: 1100px;
+    /* max-width: 1100px; */
     padding: 0.3rem;
     overflow-y: auto;
     
