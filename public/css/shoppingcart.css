@@ -82,12 +82,16 @@ h1{
   }
 
   .close {
-    border-radius: 100%;
-    border: solid 1px;
+    border-radius: 0.4rem;
+    border:none;
     cursor: pointer;
+    font-family: nunito;
+    background-color: rgba(168,132,141,0.5);
+  }
+  .close:hover{
+    background-color: rgba(222,87,100,0.5);
   }
   
-
   .btn-cupon {
     background-image: none;
     background: rgba(168,132,141,0.5);
