@@ -18,7 +18,7 @@ p{
 }
 
 h4.titulopromociones:hover {
-    text-shadow: 2px 2px rgba(69,215,218,0.5)
+    text-shadow: 3px 3px rgba(69,215,218,0.5)
 }
 
 .slider-container{
@@ -110,7 +110,7 @@ article.card{
 }
 
 .cuerpo-info p:hover{
-    text-shadow: 2px 2px rgba(69,215,218,0.5)
+    text-shadow: 3px 3px rgba(69,215,218,0.5)
 }
 
 .card img{
@@ -334,6 +334,12 @@ a.atención{
 
     div.cuerpo-promo{
         background-color: rgba(123,170,177,0.5);
+        align-items: center;
+        width: 86%;
+        height: 32%;
+        border-radius: 12px;
+        
+        }
     }
 
 }
