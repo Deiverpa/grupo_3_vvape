@@ -232,7 +232,7 @@ a.atención{
 @media (min-width: 362px) and (max-width: 769px) {
 
     h4.titulopromociones {
-        font-size: 12px;        
+        font-size: 16px;        
     }
 
     .slider-container {
@@ -325,8 +325,8 @@ a.atención{
     }
 
     .cuerpo-promo p, .cuerpo-promo a{
-        margin: 0;
-        font-size:20px;
+        margin: -3px;
+        font-size:17px;
         display: flex;
         overflow-y: auto;
         flex-flow: column;
