@@ -2,9 +2,9 @@ Retrospectiva
 
 https://app.scatterspoke.com/invitation/cl82e1rft1082860nk42yyt0135
 
+Retrospectica #2 / Sprint 2 https://app.scatterspoke.com/board/cl89graup879320ple346djrza
 
-
-Retrospectiva / Sprint 1
+Retrospectiva #1/ Sprint 1
 
 1. Puntos positivos:
 - Llegamos a un acuerdo de lo que queríamos hacer, teniendo en cuenta todas las opciones propuestas.
