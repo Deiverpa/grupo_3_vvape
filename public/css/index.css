@@ -199,6 +199,7 @@ div.atención-envíos-pagos{
     padding-left: 10%;
     padding-right: 10%;
     overflow: hidden;
+    align-items: stretch;
 }
 
 div.cuerpo-info{
