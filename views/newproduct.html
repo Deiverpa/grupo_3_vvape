@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/nav-foot.css">
+    <link rel="stylesheet" href="/css/forms.css">
+    <script src="https://kit.fontawesome.com/3a5c03d4d2.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/bf896e772d.js" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Open+Sans&family=Righteous&display=swap" rel="stylesheet">
+    <title>Create product</title>
+</head>
+<body>
+    <!-- INICIO HEADER -->
+    <header>
+        <nav class="principalNav">
+            <div class="logo">
+                <a href="/index"><img class="logoVvape"src="/images/navlogo2.png" alt="logo"></a>
+            </div>
+                <ul class="navtitles">
+                    <li class="navtitles-access"><i class="fas fa-user-circle"></i><a href="#">Acceso</a></li>
+                    <li><i class="fa-solid fa-fire-flame-curved"></i><a href="/productindex">Productos</a></li>
+                    <li><i class="fas fa-shopping-cart"></i><a href="/shoppingcart">Carrito</a></li>
+                </ul>
+            <i id="burger"class="fa-solid fa-bars navicon"></i>
+        </nav>
+    </header>
+    <!-- FINAL HEADER -->
+    <!-- INICIO MAIN -->
+    <main>
+        <div class="principalForm">
+        <fieldset>
+        <form action="login.html" method="post">
+            <p class="formTitle">
+                ¡INGRESA UN NUEVO PRODUCTO!
+            </p>
+            <div class="flexForm">
+            <p>
+                <label for="nombre">Nombre del producto:</label>
+            </p>
+            <input type="text" id="nombre" name="nombre" required autocomplete="on">
+            <p>
+                <label for="descripcion">Descripción:</label>
+            </p>
+            <input type="text" id="descripcion" name="descripcion" required autocomplete="on">
+
+            <p>
+            <label for="imagen">Foto del producto:</label>
+            </p>
+            <input type="file" id="foto" name="foto" required autocomplete="on" accept=".jpg, .png, .jpeg">
+
+            <p>
+                <label for="categoria">Tipo de producto:</label>
+                </p>
+                <select name="cantidad" class="control" >
+                    <option value="" disabled selected hidden>Selecciona</option>
+                    <option value="vapeador">Vapeador</option>
+                    <option value="esencia">Esencia</option>
+            </select>
+            <p>
+            <label for="precio">Precio del producto:</label>
+            </p>
+            <input type="text" id="precio" name="precio" required autocomplete="on" inputmode="numeric">
+            <p>
+                <label for="precio">IVA:</label>
+                </p>
+                <input type="text" id="precio" name="precio" required autocomplete="on" inputmode="numeric">
+                
+                <p class="formTitle2">
+                    
+                <a class="loginBtn"><input class="loginBtn" type="reset" value="Borrar producto"></a>
+                </p>
+                
+                <p class="formTitle2">
+                <a class="loginBtn" href="/productindex"><input class="loginBtn" type="submit" href="/productindex" value="Crear producto"></a>
+                </p>
+                           
+        
+        </form>
+          
+        </fieldset>
+        </div>
+    </main>
+    <!-- INICIO FOOTER -->
+    <footer >
+        <ul class="footTitles">
+            <li><a href="#">Términos y condiciones</a></li>
+            <li><a href="#">Digital House 2022</a></li>
+            <li><a href="#">VVAPE - DH</a></li>
+        </ul>
+    </footer>
+    <!-- FINAL FOOTER -->
+</body>
+</html>
