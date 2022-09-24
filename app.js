@@ -53,3 +53,6 @@ app.get('/shoppingcart',(req,res)=>{
 app.get('/newproduct',(req,res)=>{
     res.sendFile(path.resolve(__dirname,'./views/newproduct.html'))
 })
+app.get('/modifyproduct',(req,res)=>{
+    res.sendFile(path.resolve(__dirname,'./views/modifyproduct.html'))
+})
