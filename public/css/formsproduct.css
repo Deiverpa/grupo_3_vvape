@@ -197,6 +197,9 @@ input[type="checkbox" ] {
 }
 .control{
     border-radius: 1rem;
+    }
+.control:hover{
+    cursor: pointer;
 }
 @media (min-width:361px){
     .principalForm{
