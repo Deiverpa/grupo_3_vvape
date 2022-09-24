@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/nav-foot.css">
-    <link rel="stylesheet" href="/css/forms.css">
+    <link rel="stylesheet" href="/css/formsproduct.css">
     <script src="https://kit.fontawesome.com/3a5c03d4d2.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/bf896e772d.js" crossorigin="anonymous"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
@@ -34,7 +34,7 @@
     <main>
         <div class="principalForm">
         <fieldset>
-        <form action="login.html" method="post">
+        <form action="newproduct.html" method="POST">
             <p class="formTitle">
                 ¡INGRESA UN NUEVO PRODUCTO!
             </p>
@@ -51,7 +51,7 @@
             <p>
             <label for="imagen">Foto del producto:</label>
             </p>
-            <input type="file" id="foto" name="foto" required autocomplete="on" accept=".jpg, .png, .jpeg">
+            <input type="file" id="foto" name="foto" required autocomplete="on" accept=".jpg, .png, .jpeg" >
 
             <p>
                 <label for="categoria">Tipo de producto:</label>
@@ -69,15 +69,16 @@
                 <label for="precio">IVA:</label>
                 </p>
                 <input type="text" id="precio" name="precio" required autocomplete="on" inputmode="numeric">
-                
+            <div class="buttons">
                 <p class="formTitle2">
                     
-                <a class="loginBtn"><input class="loginBtn" type="reset" value="Borrar producto"></a>
+                <a class="loginBtn"><input class="loginBtn" type="reset" value="Limpiar"></a>
                 </p>
                 
                 <p class="formTitle2">
-                <a class="loginBtn" href="/productindex"><input class="loginBtn" type="submit" href="/productindex" value="Crear producto"></a>
+                <a class="loginBtn" href="/product"><input class="loginBtn" type="submit" href="/productindex" value="Crear"></a>
                 </p>
+            </div>
                            
         
         </form>
