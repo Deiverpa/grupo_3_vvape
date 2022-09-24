@@ -1,3 +1,10 @@
+/* #f0f0f0 blanco rgba(240,240,240,0.5)
+#de5764 rosado rgba(222,87,100,0.5)
+#a8848d moradito rgba(168,132,141,0.5)
+#7baab1 azul oscur rgba(123,170,177,0.5)
+#45d7da azul claro rgba(69,215,218,0.5)
+#151f28 azul fondo rgba(21,31,40,0.5) */
+
 .footerForms{
     height: 10vh;
     background-color: #151f28;
@@ -109,7 +116,7 @@ a .loginBtn {
     border: none;
     width: auto;
     padding: 9px;
-    background-color: rgba(168,132,141,0.5);
+    background-color: rgba(123,170,177,0.5);
     border-radius: 2rem;
 }
 .loginBtn{
@@ -126,6 +133,14 @@ a .loginBtn {
     
 }
 
+.priceinfo{
+    display: flex;
+    align-items: center;
+}
+.precio, .iva{
+    display: flex;
+    min-width: max-content;
+}
 
 .flexForm{
     display: flex;
@@ -135,12 +150,30 @@ a .loginBtn {
     align-items: center;
 }
 
+.cantidad{
+    display: flex;
+    align-items: center;
+}
+
 input[type="submit" i] {
     cursor: pointer;
 }
 input[type="file" i] {
     
     font-size: 0.8rem;
+    margin:5px
+}
+input[id="iva"]{
+    width:40px;
+    
+}
+input[id="precio"]{
+    width:70px;
+    
+}
+input[id="stock"]{
+    width:70px;
+    
 }
 
 input[type="submit" i]:hover {
@@ -151,7 +184,7 @@ input[type="reset" i] {
 }
 
 input[type="reset" i]:hover {
-    background-color:rgba(69,215,218,0.5);
+    background-color:rgba(222,87,100,0.5)
 }
 
 input[type="checkbox" ] {

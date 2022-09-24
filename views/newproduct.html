@@ -39,6 +39,11 @@
                 ¡INGRESA UN NUEVO PRODUCTO!
             </p>
             <div class="flexForm">
+                <p>
+                    <label for="ID">ID del producto:</label>
+                </p>
+                <input type="text" id="id" name="id" required autocomplete="on">
+                
             <p>
                 <label for="nombre">Nombre del producto:</label>
             </p>
@@ -61,22 +66,31 @@
                     <option value="vapeador">Vapeador</option>
                     <option value="esencia">Esencia</option>
             </select>
+            <div class="cantidad">
             <p>
-            <label for="precio">Precio del producto:</label>
-            </p>
-            <input type="text" id="precio" name="precio" required autocomplete="on" inputmode="numeric">
-            <p>
-                <label for="precio">IVA:</label>
+                <label for="categoria">Cantidad disponible:</label>
                 </p>
-                <input type="text" id="precio" name="precio" required autocomplete="on" inputmode="numeric">
-            <div class="buttons">
+                <input type="text" id="stock" name="stock" required autocomplete="on" inputmode="numeric">
+            </div>      
+                <div class="priceinfo">
+            <p>
+            <label class="precio" for="precio">Precio COP:</label>
+            </p>
+            <input  type="text" id="precio" name="precio" required autocomplete="on" inputmode="numeric">
+            <p>
+                <label class="iva" for="iva">IVA %:</label>
+                </p>
+                <input type="text" id="iva" name="iva" required autocomplete="on" inputmode="numeric">
+            </div>
+
+                <div class="buttons">
                 <p class="formTitle2">
                     
                 <a class="loginBtn"><input class="loginBtn" type="reset" value="Limpiar"></a>
                 </p>
                 
                 <p class="formTitle2">
-                <a class="loginBtn" href="/product"><input class="loginBtn" type="submit" href="/productindex" value="Crear"></a>
+                <a class="loginBtn" href="/productindex"><input class="loginBtn" type="submit" href="/productindex" value="Crear"></a>
                 </p>
             </div>
                            

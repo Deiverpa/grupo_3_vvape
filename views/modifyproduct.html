@@ -34,27 +34,22 @@
     <main>
         <div class="principalForm">
         <fieldset>
-        <form action="newproduct.html" method="POST">
+        <form action="modifyproduct.html" method="POST">
             <p class="formTitle">
                 ¡MODIFICA UN PRODUCTO!
             </p>
             <div class="flexForm">
 
                 <p>
-                    <label for="categoria">Elige un producto:</label>
+                    <label for="categoria">ID / Nombre de producto:</label>
                     </p>
-                    <select name="cantidad" class="control" >
-                        <option value="" disabled selected hidden>Selecciona</option>
-                        <option value="producto1">Producto 1</option>
-                        <option value="producto2">Producto 2</option>
-                        <option value="producto2">Producto 3</option>
-                        <option value="producto2">Producto 4</option>
-                        <option value="producto2">Producto 5</option>
-                        <option value="producto2">Producto 6</option>
-                        <option value="producto2">Producto 7</option>
-                        <option value="producto2">Producto 8</option>
-                </select>                    
-            <p>
+                    <input type="search" id="descripcion" name="descripcion" placeholder="Ingresa ID / Nombre">                   
+                    <p>
+                        <label for="nombre">Nuevo ID</label>
+                    </p>
+                    <input type="text" id="id" name="id">
+            
+                    <p>
                 <label for="nombre">Nuevo nombre</label>
             </p>
             <input type="text" id="nombre" name="nombre">
@@ -76,14 +71,16 @@
                     <option value="vapeador">Vapeador</option>
                     <option value="esencia">Esencia</option>
             </select>
+            <div class="priceinfo">
             <p>
-            <label for="precio">Nuevo precio:</label>
-            </p>
-            <input type="text" id="precio" name="precio" inputmode="numeric">
-            <p>
-                <label for="precio">IVA:</label>
+                <label class="precio" for="precio">Precio COP:</label>
                 </p>
-                <input type="text" id="precio" name="precio" inputmode="numeric">
+                <input  type="text" id="precio" name="precio"  inputmode="numeric">
+                <p>
+                    <label class="iva" for="iva">IVA %:</label>
+                    </p>
+                    <input type="text" id="iva" name="iva" r inputmode="numeric">
+                </div>
             <div class="buttons">
                 <p class="formTitle2">
                     
@@ -91,7 +88,7 @@
                 </p>
                 
                 <p class="formTitle2">
-                <a class="loginBtn" href="/product"><input class="loginBtn" type="submit" href="/productindex" value="Modificar"></a>
+                <a class="loginBtn" href="/productindex"><input class="loginBtn" type="submit" href="/productindex" value="Modificar"></a>
                 </p>
             </div>
                            
