@@ -3,11 +3,17 @@ const path = require ("path");
 
 const app = express ();
 
+const indexRouter = require('./routes/index')
+const usersRouter = require('./routes/users')
+const publicPath = path.resolve(__dirname, './public')
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-
-const publicPath = path.resolve(__dirname, './public')
 app.use (express.static(publicPath))
+app.use('/', indexRouter);
+app.use('/users', usersRouter);
+
+app.set('view engine', 'ejs');
 
 app.listen (3005, () =>{
     console.log ("servidor corriendo en el puerto 3005")
@@ -37,25 +43,6 @@ app.get('/esencia3',(req,res)=>{
 app.get('/esencia4',(req,res)=>{
     res.sendFile(path.resolve(__dirname,'./views/esencia4.html'))
 })
-app.get('/productindex',(req,res)=>{
-    res.sendFile(path.resolve(__dirname,'./views/productindex.html'))
-})
-app.get('/register',(req,res)=>{
-    res.sendFile(path.resolve(__dirname,'./views/register.html'))
-})
-app.get('/login',(req,res)=>{
-    res.sendFile(path.resolve(__dirname,'./views/login.html'))
-})
-app.get('/index',(req,res)=>{
-    res.sendFile(path.resolve(__dirname,'./views/index.html'))
-})
-app.get('/shoppingcart',(req,res)=>{
-    res.sendFile(path.resolve(__dirname,'./views/shoppingcart.html'))
-    
-})
-app.get('/newproduct',(req,res)=>{
-    res.sendFile(path.resolve(__dirname,'./views/newproduct.html'))
-})
-app.get('/modifyproduct',(req,res)=>{
-    res.sendFile(path.resolve(__dirname,'./views/modifyproduct.html'))
-})
+
+
+module.exports = app;
