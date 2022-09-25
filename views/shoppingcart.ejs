@@ -1,39 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrito Compras</title>
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/nav-foot.css">
+    <%- include('./partials/head') %>
     <link rel="stylesheet" href="/css/shoppingcart.css">
-    <script src="https://kit.fontawesome.com/3a5c03d4d2.js" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/bf896e772d.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Open+Sans&family=Righteous&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Carrito Compras</title>
 </head>
 
 <body>
-    <!-- INICIO HEADER -->
-    <header>
-        <nav class="principalNav">
-            <div class="logo">
-                <a href="/index"><img class="logoVvape"src="/images/navlogo2.png" alt="logo"></a>
-            </div>
-            <ul class="navtitles">
-                <li class="navtitles-access"><i class="fas fa-user-circle"></i><a href="/login">Acceso</a></li>
-                <li><i class="fa-solid fa-fire-flame-curved"></i><a href="/productindex">Productos</a></li>
-                <li><i class="fas fa-shopping-cart"></i><a href="#">Carrito</a></li>
-            </ul>
-            <i id="burger" class="fa-solid fa-bars navicon"></i>
-        </nav>
-    </header>
-    <!-- FINAL HEADER -->
+    <%- include('./partials/nav') %>
     <main>
      <div class="all">   
     <div class="content">
@@ -99,15 +73,7 @@
     </div>
 </div>
     </main>
-    <!-- INICIO FOOTER -->
-    <footer>
-        <ul class="footTitles">
-            <li><a href="#">Términos y condiciones</a></li>
-            <li><a href="#">Digital House 2022</a></li>
-            <li><a href="#">VVAPE - DH</a></li>
-        </ul>
-    </footer>
-    <!-- FINAL FOOTER -->
+    <%- include('./partials/footer') %>
 </body>
 
 </html>
