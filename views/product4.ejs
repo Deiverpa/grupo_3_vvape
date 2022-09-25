@@ -1,43 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MENTHOL ORIGINAL</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito&family=Open+Sans&family=Righteous&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/normalize.css">
+    <%- include('./partials/head') %>
     <link rel="stylesheet" href="/css/product.css">
-    <link rel="stylesheet" href="/css/nav-foot.css">
-    <script src="https://kit.fontawesome.com/3a5c03d4d2.js" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/bf896e772d.js" crossorigin="anonymous"></script>
+    <title>SMOOTH VVAPE</title>
 </head>
 <body>
-    <!-- INICIO HEADER -->
-    <header>
-        <nav class="principalNav">
-            <div class="logo">
-                <a href="/index"><img class="logoVvape"src="/images/navlogo2.png" alt="logo"></a>
-            </div>
-                <ul class="navtitles">
-                    <li class="navtitles-access"><i class="fas fa-user-circle"></i><a href="login">Acceso</a></li>
-                    <li><i class="fa-solid fa-fire-flame-curved"></i><a href="/productindex">Productos</a></li>
-                    <li><i class="fas fa-shopping-cart"></i><a href="/shoppingcart">Carrito</a></li>
-                </ul>
-            <i id="burger"class="fa-solid fa-bars navicon"></i>
-        </nav>
-    </header>
-    <!-- FINAL HEADER -->
+    <%- include('./partials/nav') %>
     <!-- INICIO MAIN -->
     <main>
                  
                 <div class="card">
-                        <h4 class="productname"> MENTHOL ORIGINAL </h4>
+                        <h4 class="productname"> SMOOTH VVAPE </h4>
                 <div class="notitle">
                     <section class="noenvio"> 
-             <div class="picture"> <img src="/images/esencia-1.jpg" alt="esencia1"></div>
+             <div class="picture"> <img src="/images/vaper-4.jpg" alt="vaper4"></div>
                 <div class="cardinfo">
                     
                     <div class="det">
@@ -46,7 +23,7 @@
                         <br>
                     <p class="description"> 
                         
-                        Esa menta helada como siempre quisiste. Puedes estar seguro: este sabor no puede faltar en tus actividades. Sabor natural con un toque escalofriante para darle ese plus a tus días.<br>    
+                        El dispositivo cuenta con un sistema de llenado superior y viene con un ajuste de flujo de aire magnético que garantiza un control preciso del flujo de aire para una experiencia de vapeo mejorada cada vez. Alimentado por una enorme batería recargable incorporada de 2500 mAh y el último chip ABYSS, el cual ofrece un rendimiento de vapeo potente y eficiente.<br>    
                         <br>
                      <em>**Producto exclusivo para mayores de edad, se usa con esencias que pueden contener nicotina, la cual es adictiva.</em></p>
                     </div>
@@ -63,7 +40,7 @@
                         <!-- <input class="control" type="number" value="1" /> -->
                         </div>
                     <div class="info">
-                    <p class="precio"> $35.500 </p>
+                    <p class="precio"> $150.000 </p>
                     <a class="carrito" href="/shoppingcart"><input class="carrito" type="submit" href="/shoppingcart" value="IR A COMPRAR"></a>
                     </div>
                     </div>
@@ -81,16 +58,7 @@
             </div>
 
         </main>
-       <!-- FIN MAIN --> 
-      <!-- INICIO FOOTER -->
-   <footer>
-    <ul class="footTitles">
-        <li><a href="#">Términos y condiciones</a></li>
-        <li><a href="#">Digital House 2022</a></li>
-        <li><a href="#">VVAPE - DH</a></li>
-    </ul>
-</footer>
-<!-- FINAL FOOTER -->    
-            
+    <!-- FIN MAIN --> 
+    <%- include('./partials/footer') %>  
 </body>
 </html>
