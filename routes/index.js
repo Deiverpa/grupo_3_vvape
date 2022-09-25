@@ -8,6 +8,8 @@ router.get('/', mainController.index)
 // usuarios
 router.get('/register', mainController.register)
 router.get('/login', mainController.login)
+router.post('/register', mainController.register)
+router.post('/login', mainController.login)
 
 // productos
 router.get('/productindex', mainController.productindex)
@@ -16,6 +18,7 @@ router.get('/shoppingcart', mainController.shoppingcart)
 // administrado & users
 router.get('/newproduct', mainController.newproduct)
 router.get('/modifyproduct', mainController.modifyproduct)
-
+router.post('/newproduct', mainController.newproduct)
+router.post('/modifyproduct', mainController.modifyproduct)
 
 module.exports = router;
