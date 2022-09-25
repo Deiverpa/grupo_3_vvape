@@ -5,20 +5,7 @@
 </head>
 <body>
     <!-- INICIO HEADER -->
-    <header>
-        <nav class="principalNav">
-            <div class="logo">
-            <a href="/index"><img class="logoVvape"src="/images/navlogo2.png" alt="logo"></a>
-            </div>
-                <ul class="navtitles">
-                    <li class="navtitles-access"><i class="fas fa-user-circle"></i><a class="navLink" href="/login">Acceso</a></li>
-                    <li><i class="fa-solid fa-fire-flame-curved"></i><a class="navLink" href="/productindex">Productos</a></li>
-                    <li><i class="fas fa-shopping-cart"></i><a class="navLink" href="/shoppingcart">Carrito</a></li>
-                </ul>
-            <i id="burger"class="fa-solid fa-bars navicon"></i>
-        </nav>
-    </header>
-    <!-- FINAL HEADER -->
+    <%- include('./partials/nav') %>
     <!-- INICIO MAIN -->
     <main>
         <div class="principalForm">
@@ -57,14 +44,6 @@
         </form>
         </div>
     </main>
-    <!-- INICIO FOOTER -->
-    <footer>
-        <ul class="footTitles">
-            <li><a href="#">Términos y condiciones</a></li>
-            <li><a href="#">Digital House 2022</a></li>
-            <li><a href="#">VVAPE - DH</a></li>
-        </ul>
-    </footer>
-    <!-- FINAL FOOTER -->
+    <%- include('./partials/footer') %>
 </body>
 </html>
