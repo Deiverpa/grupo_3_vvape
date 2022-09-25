@@ -4,3 +4,7 @@
 
 09/24- EB: - formularios de modificación y creación de productos con información y estilos solicitados
            - dificultad al vincular links de las demás páginas en los formularios
+
+09/25- DP: - Ayer implementé el sistema de ruteo completo con EJS verifiqué controladores e implementé los archivos partials.
+           - Dificultad encontrando documentación.
+           - Complejidad para usar el req.params con la ruta opcional :id
