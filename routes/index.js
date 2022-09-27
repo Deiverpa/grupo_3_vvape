@@ -14,14 +14,7 @@ router.post('/login', mainController.login)
 // productos
 router.get('/productindex', mainController.productindex)
 // productos detallados
-router.get('/product1', mainController.product1)
-router.get('/product2', mainController.product2)
-router.get('/product3', mainController.product3)
-router.get('/product4', mainController.product4)
-router.get('/esencia1', mainController.esencia1)
-router.get('/esencia2', mainController.esencia2)
-router.get('/esencia3', mainController.esencia3)
-router.get('/esencia4', mainController.esencia4)
+router.get('/product/:id', mainController.product)
 
 // shoppingK
 router.get('/shoppingcart', mainController.shoppingcart)
