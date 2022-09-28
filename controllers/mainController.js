@@ -41,7 +41,7 @@ const listaProductos = [
           "Esa menta helada como siempre quisiste. Puedes estar seguro: este sabor no puede faltar en tus actividades. Sabor natural con un toque escalofriante para darle ese plus a tus días.",
         precio: "$35.500",
         img: "esencia-1.jpg",
-        advertencia: "**Producto exclusivo para mayores de edad, se usa con esencias que pueden contener nicotina, la cual es adictiva."
+        advertencia: "**Producto exclusivo para mayores de edad, estas esencias pueden contener nicotina, la cual es adictiva."
       },
       {
         id: 6,
@@ -50,7 +50,7 @@ const listaProductos = [
           "Este sabor es una mezcla de sabores que se inspiran en uvas maduras, fresas frescas y arándanos llenos de sabor. La inhalación precipita suavemente una corriente de delicioso sabor a frutos azules seguido de un dulce y suculento sabor a bayas al exhalar.",
         precio: "$35.500",
         img: "esencia-2.jpg",
-        advertencia: "**Producto exclusivo para mayores de edad, se usa con esencias que pueden contener nicotina, la cual es adictiva."
+        advertencia: "**Producto exclusivo para mayores de edad, estas esencias pueden contener nicotina, la cual es adictiva."
       },
       {
         id: 7,
@@ -59,7 +59,7 @@ const listaProductos = [
           "¿Buscas una esencia audaz con un sabor bien redondeado? Entonces este líquido es perfecto para ti. Cada golpe proporcionará una mezcla cuidadosamente diseñada de cerezas dulces, fresas maduras y un mentol fresco para dejarte con un final refrescante.",
         precio: "$35.500",
         img: "esencia-6.jpg",
-        advertencia: "**Producto exclusivo para mayores de edad, se usa con esencias que pueden contener nicotina, la cual es adictiva."
+        advertencia: "**Producto exclusivo para mayores de edad, estas esencias pueden contener nicotina, la cual es adictiva."
       },
       {
         id: 8,
@@ -68,7 +68,7 @@ const listaProductos = [
           "SODA PINEAPPLE CRUSH sirve una combinación de piña dulce y una ráfaga helada de soda al exhalar. ¡Dale un verdadero placer a tus papilas gustativas!",
         precio: "$35.500",
         img: "esencia-4.jpg",
-        advertencia: "**Producto exclusivo para mayores de edad, se usa con esencias que pueden contener nicotina, la cual es adictiva."
+        advertencia: "**Producto exclusivo para mayores de edad, estas esencias pueden contener nicotina, la cual es adictiva."
       }
 ]
 
