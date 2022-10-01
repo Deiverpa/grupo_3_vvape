@@ -22,6 +22,7 @@ const listaProductos = [
         titulo: "ULTRA VVAPE",
         descripcion:
           "Es un dispositivo portátil que está diseñado para vapear sobre la marcha. El ULTRA VVAPE adopta un cartucho de jugo de 2ml para una recarga fácil. La bobina incorporada de 1.2ohm hace que sea un verdadero equipo de vapeo para jugo y sales de nicotina con alto contenido de nicotina. También tiene una capacidad de batería de 350 mAh.",
+          precio: "$220.000",
         img: "vaper-3.jpg",
         advertencia: "**Producto exclusivo para mayores de edad, se usa con esencias que pueden contener nicotina, la cual es adictiva."
       },
