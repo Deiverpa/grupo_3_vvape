@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 const listaProductos = [
     {
       id: 1,
@@ -76,6 +77,10 @@ const listaProductos = [
 
 const mainController={
     index: (req,res)=>{
+=======
+const mainController = {
+    index: (req,res) => {
+>>>>>>> Stashed changes
         res.render('index')
     },
     register: (req,res)=>{
