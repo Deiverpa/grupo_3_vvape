@@ -22,8 +22,8 @@ router.get('/shoppingcart', mainController.shoppingcart)
 
 // administrado & users
 router.get('/newproduct', mainController.newproduct)
-router.get('/modifyproduct', mainController.modifyproduct)
 router.post('/newproduct', mainController.newproduct)
+router.get('/modifyproduct', mainController.modifyproduct)
 router.post('/modifyproduct', mainController.modifyproduct)
 
 // prueba
