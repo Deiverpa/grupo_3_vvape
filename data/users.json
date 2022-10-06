@@ -1,0 +1,52 @@
+[
+  {
+    "birth_date": "1/2/2022",
+    "first_name": "Patsy",
+    "last_name": "Piser",
+    "email": "ppiser0@reverbnation.com",
+    "password": "twnkpicrxek",
+    "id": 1,
+    "user_type": "admin",
+    "image": "https://robohash.org/fugavoluptatesimilique.png?size=50x50&set=set1"
+  },
+  {
+    "birth_date": "10/19/2021",
+    "first_name": "Karilynn",
+    "last_name": "Sivier",
+    "email": "ksivier1@apache.org",
+    "password": "yn0WKL",
+    "id": 2,
+    "user_type": "client",
+    "image": "https://robohash.org/sitconsequaturrem.png?size=50x50&set=set1"
+  },
+  {
+    "birth_date": "3/22/2022",
+    "first_name": "Johnathon",
+    "last_name": "Gulleford",
+    "email": "jgulleford2@typepad.com",
+    "password": "2ZKHyrFtKw",
+    "id": 3,
+    "user_type": "admin",
+    "image": "https://robohash.org/quiafacereomnis.png?size=50x50&set=set1"
+  },
+  {
+    "birth_date": "7/29/2022",
+    "first_name": "Diandra",
+    "last_name": "Jehaes",
+    "email": "djehaes3@friendfeed.com",
+    "password": "LpDJSUzX20A8",
+    "id": 4,
+    "user_type": "admin",
+    "image": "https://robohash.org/utundedeserunt.png?size=50x50&set=set1"
+  },
+  {
+    "birth_date": "8/27/2022",
+    "first_name": "Leeland",
+    "last_name": "Dunkersley",
+    "email": "ldunkersley4@apache.org",
+    "password": "0Z6EDKPG",
+    "id": 5,
+    "user_type": "admin",
+    "image": "https://robohash.org/insitnatus.png?size=50x50&set=set1"
+  }
+]
