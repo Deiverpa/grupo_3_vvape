@@ -13,17 +13,18 @@
         
             <h2> Selecciona tu producto VVAPE favorito </h2>
             <div class="productinf">
-            <% visited.forEach(product => {%> 
+            <% products.forEach(products => {%> 
             <div class="card">
-                <a href="/product/1"><img src="/images/vaper-2.jpg" alt="vaper2"></a>
+                <a href="/product/<%=products.id%>"><img src="/images/<%=products.img%>" alt="<%=products.name%>"></a>
                 <div class="cardinfo">
                     <div class="containerP">
-                <h4> GEEK VVAPE </h4>
+                <h4><%=products.titulo%></h4>
                 
             </div>
-            <p class="precio"> $150.000 </p>
+            <p class="precio"> <%=products.precio%> </p>
             </div>
         </div>
+        <%})%>
             </div>
             <h3> Página 1 de 1 </h3>
           
@@ -34,3 +35,5 @@
        <%- include('./partials/footer') %>  
 </body>
 </html>
+
+

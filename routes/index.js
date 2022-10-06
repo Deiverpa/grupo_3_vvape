@@ -12,8 +12,9 @@ router.post('/register', mainController.register)
 router.post('/login', mainController.login)
 
 // productos
-router.get('/productindex', mainController.productindex)
+// router.get('/productindex', mainController.productindex)
 // productos detallados
+router.get('/products', mainController.products)
 router.get('/product/:id', mainController.product)
 
 // shoppingK
@@ -26,6 +27,6 @@ router.post('/newproduct', mainController.newproduct)
 router.post('/modifyproduct', mainController.modifyproduct)
 
 // prueba
-router.get('/productos', mainController.prueba)
+
 
 module.exports = router;

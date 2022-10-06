@@ -89,9 +89,9 @@ const mainController={
     login: (req,res)=>{
         res.render('login')
     },
-    productindex: (req,res)=>{
-        res.render('productindex')
-    },
+    // productindex: (req,res)=>{
+    //     res.render('productindex')
+    // },
     shoppingcart: (req,res)=>{
         res.render('shoppingcart')
     },
@@ -105,8 +105,8 @@ const mainController={
         let producto = products.find(producto=>producto.id == req.params.id);
         res.render('product', {producto:producto})
     },
-    prueba: (req,res)=>{
-      res.render('productos')
+    products: (req,res)=>{
+      res.render('products',{products:products})
   }
 }
 
