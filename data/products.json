@@ -62,5 +62,21 @@
       "precio":"$35.500",
       "img":"esencia-4.jpg",
       "advertencia":"**Producto exclusivo para mayores de edad, estas esencias pueden contener nicotina, la cual es adictiva."
+    },
+    {
+      "id":9,
+      "titulo":"SODA PINEAPPLE CRUSH",
+      "descripcion":"SODA PINEAPPLE CRUSH sirve una combinación de piña dulce y una ráfaga helada de soda al exhalar. ¡Dale un verdadero placer a tus papilas gustativas!",
+      "precio":"$35.500",
+      "img":"esencia-4.jpg",
+      "advertencia":"**Producto exclusivo para mayores de edad, estas esencias pueden contener nicotina, la cual es adictiva."
+    },
+    {
+      "id":10,
+      "titulo":"SODA PINEAPPLE CRUSH",
+      "descripcion":"SODA PINEAPPLE CRUSH sirve una combinación de piña dulce y una ráfaga helada de soda al exhalar. ¡Dale un verdadero placer a tus papilas gustativas!",
+      "precio":"$35.500",
+      "img":"esencia-4.jpg",
+      "advertencia":"**Producto exclusivo para mayores de edad, estas esencias pueden contener nicotina, la cual es adictiva."
     }
   ]
