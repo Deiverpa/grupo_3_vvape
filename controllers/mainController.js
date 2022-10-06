@@ -40,8 +40,11 @@ const mainController={
 		}
 		let newProduct = {
 			id: products[products.length - 1].id + 1,
-			...req.body,
-			image: image,
+      titulo: req.body.titulo,
+      descripcion: req.body.descripcion,
+      precio: req.body.precio,
+			img: image,
+      advertencia: "*Producto exclusivo para mayores de edad, estas esencias pueden contener nicotina, la cual es adictiva"
 		}
 		products.push(newProduct)
 		fs.writeFileSync(productsFilePath,JSON.stringify(products,null));
