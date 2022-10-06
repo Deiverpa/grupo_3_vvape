@@ -105,6 +105,9 @@ const mainController={
         let producto = products.find(producto=>producto.id == req.params.id);
         res.render('product', {producto:producto})
     },
+    prueba: (req,res)=>{
+      res.render('productos')
+  }
 }
 
 module.exports = mainController;

@@ -25,4 +25,7 @@ router.get('/modifyproduct', mainController.modifyproduct)
 router.post('/newproduct', mainController.newproduct)
 router.post('/modifyproduct', mainController.modifyproduct)
 
+// prueba
+router.get('/productos', mainController.prueba)
+
 module.exports = router;
