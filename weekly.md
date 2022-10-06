@@ -12,9 +12,12 @@
 09/26 - MH: - Lectura del Sprint, organización del Trello, creación de usuario para desarrollar la actividad del Retro, creación de la carpeta source.
             - Al crear la carpeta source y realizar verificación de las rutas, estas no funcionan 
             - Solucionar problema de rutas, al crear la carpeta source
+            
 09/26 - EB: - Creacion parciales addtocart / envios
             - Creacion vista product con ruta parametrizada
             - Modificación controlador, agregar productos, uso reqparams
             - Vista dinámica en product.ejs con tags de ejs <%
             - Creación archivos legacy: productos, controller, rutas
-
+            
+10/05 - EB: - Creación json productos
+            - Edición rutas productindex por products
