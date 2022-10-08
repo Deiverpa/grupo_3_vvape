@@ -24,3 +24,8 @@
 
 10/08 - DP: - Lectura del Sprint, organización del Trello, creacion de vistas para el método DELETE, implementación del method_override.
     -Dificultad al crear y traer información desde params para los formularios.
+            
+10/08 - EB: - Modificación ruta edición productos
+            - Mover imagen default a la carpeta de imagenes
+            - Dificultad para llevar a los productos la selección de la lista desplegable / implementación de rutas put y delete
+            
