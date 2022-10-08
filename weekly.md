@@ -21,3 +21,7 @@
             
 10/05 - EB: - Creación json productos
             - Edición rutas productindex por products
+            
+10/08 - EB: - Modificación ruta edición productos
+            - Mover imagen default a la carpeta de imagenes
+            
