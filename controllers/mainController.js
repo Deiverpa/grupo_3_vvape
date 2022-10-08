@@ -77,6 +77,11 @@ const mainController={
 		products.push(newProduct)
 		fs.writeFileSync(productsFilePath,JSON.stringify(products,null));
 		res.redirect('products')
+	},
+    delete : (req, res) => {
+		let productosFiltrados = products.filter(producto => producto.id != req.params.id)
+		fs.writeFileSync(productsFilePath,JSON.stringify(productosFiltrados,null));
+		res.redirect('products')
 	}
 }
 

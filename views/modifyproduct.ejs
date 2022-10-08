@@ -62,11 +62,15 @@
                 <p class="formTitle2">
                 <a class="loginBtn" href="/products/<%= productToEdit.id %>"><input class="loginBtn" type="submit" href="/products/<%= productToEdit.id %>" value="Modificar"></a>
                 </p>
-            </div>
-                           
-        
+            </div>                  
         </form>
-          
+        <div class="buttons">
+        <form action="/product/<%= productToEdit.id %>?_method=DELETE" method="POST">
+            <p class="formTitle2">
+                <a class="loginBtn" href="/product/<%= productToEdit.id %>"><input class="loginBtn" type="submit" href="/product/<%= productToEdit.id %>" value="Eliminar"></a>
+                </p>
+        </form>
+        </div>
         </fieldset>
         </div>
     </main>

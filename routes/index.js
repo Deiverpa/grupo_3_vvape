@@ -41,7 +41,7 @@ router.post('/products',upload.any(), mainController.store)
 router.get('/product/:id/modifyproduct', mainController.modifyproduct)
 router.put('/product/:id', upload.any(), mainController.update)
 
-// prueba
-
+// eliminar
+router.delete('/product/:id', mainController.delete); 
 
 module.exports = router;
