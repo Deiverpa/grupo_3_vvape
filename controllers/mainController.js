@@ -7,29 +7,56 @@ const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
 const mainController={
     index: (req,res)=>{
-        res.render('index')
+        res.render('index');
     },
     register: (req,res)=>{
-        res.render('register')
+        res.render('register');
     },
     login: (req,res)=>{
-        res.render('login')
+        res.render('login');
     },
     shoppingcart: (req,res)=>{
-        res.render('shoppingcart')
+        res.render('shoppingcart');
     },
     newproduct: (req,res)=>{
-        res.render('newproduct')
+        res.render('newproduct');
     },
     modifyproduct: (req,res)=>{
-        res.render('modifyproduct')
+        let productToEdit = products.find(producto=>producto.id == req.params.id);
+        res.render('modifyproduct', {productToEdit});
     },
+    update: (req, res) => {
+		let productToUpdate = products.find(producto => producto.id == req.params.id)
+		let image 
+		if(req.files[0] != undefined){
+			image = req.files[0].filename;	
+		}else{
+			image = productToUpdate.image;
+		}
+		let NewProductToUpdate = {
+			id: productToUpdate.id,
+			titulo: req.body.titulo,
+            descripcion: req.body.descripcion,
+            precio: req.body.precio,
+			img: image,
+            stock: req.body.stock,
+            advertencia: "**Producto exclusivo para mayores de edad, pueden contener nicotina, la cual es una sustancia adictiva",
+		}
+		let newProduct = products.map(producto =>{
+			if (producto.id == NewProductToUpdate.id){
+				return producto = {...NewProductToUpdate}
+			} 
+			return producto;
+		})
+		fs.writeFileSync(productsFilePath,JSON.stringify(newProduct,null));
+		res.redirect('/')
+	},
     product: (req,res)=>{
         let producto = products.find(producto=>producto.id == req.params.id);
-        res.render('product', {producto:producto})
+        res.render('product', {producto:producto});
     },
     products: (req,res)=>{
-      res.render('products',{products:products})
+      res.render('products',{products:products});
   },
   store: (req, res) => {
 		let image 
@@ -46,8 +73,7 @@ const mainController={
 			img: image,
             stock: req.body.stock,
       advertencia: "**Producto exclusivo para mayores de edad, pueden contener nicotina, la cual es una sustancia adictiva",
-      
-		}
+      }
 		products.push(newProduct)
 		fs.writeFileSync(productsFilePath,JSON.stringify(products,null));
 		res.redirect('products')
