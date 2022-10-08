@@ -21,3 +21,6 @@
             
 10/05 - EB: - Creación json productos
             - Edición rutas productindex por products
+
+10/08 - DP: - Lectura del Sprint, organización del Trello, creacion de vistas para el método DELETE, implementación del method_override.
+    -Dificultad al crear y traer información desde params para los formularios.

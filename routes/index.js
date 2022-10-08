@@ -28,7 +28,7 @@ router.post('/login', mainController.login)
 // productos
 router.get('/products', mainController.products)
 // productos detallados
-router.get('/product/:id', mainController.product)
+router.get('/products/:id', mainController.product)
 
 // shoppingK
 router.get('/shoppingcart', mainController.shoppingcart)
@@ -38,10 +38,10 @@ router.get('/newproduct', mainController.newproduct)
 router.post('/products',upload.any(), mainController.store)
 
 //modifyproduct
-router.get('/product/:id/modifyproduct', mainController.modifyproduct)
-router.put('/product/:id', upload.any(), mainController.update)
+router.get('/products/:id/modifyproduct', mainController.modifyproduct)
+router.put('/products/:id', upload.any(), mainController.update)
 
 // eliminar
-router.delete('/product/:id', mainController.delete); 
+router.delete('/products/:id', mainController.delete); 
 
 module.exports = router;
