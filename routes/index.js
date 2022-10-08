@@ -33,11 +33,13 @@ router.get('/product/:id', mainController.product)
 // shoppingK
 router.get('/shoppingcart', mainController.shoppingcart)
 
-// administrado & users
+// createproduct
 router.get('/newproduct', mainController.newproduct)
 router.post('/products',upload.any(), mainController.store)
-router.get('/modifyproduct', mainController.modifyproduct)
-router.post('/modifyproduct', mainController.modifyproduct)
+
+//modifyproduct
+router.get('/product/:id/modifyproduct', mainController.modifyproduct)
+router.put('/product/:id', upload.any(), mainController.update)
 
 // prueba
 

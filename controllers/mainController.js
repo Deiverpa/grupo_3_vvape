@@ -44,7 +44,9 @@ const mainController={
       descripcion: req.body.descripcion,
       precio: req.body.precio,
 			img: image,
-      advertencia: "*Producto exclusivo para mayores de edad, estas esencias pueden contener nicotina, la cual es adictiva"
+            stock: req.body.stock,
+      advertencia: "**Producto exclusivo para mayores de edad, pueden contener nicotina, la cual es una sustancia adictiva",
+      
 		}
 		products.push(newProduct)
 		fs.writeFileSync(productsFilePath,JSON.stringify(products,null));
