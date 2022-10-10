@@ -10,7 +10,7 @@
     <main>
         <div class="principalForm">
         <fieldset>
-        <form action="/products/<%= productToEdit.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
+        <form action="/products/modify/<%= productToEdit.id %>" method="POST" enctype="multipart/form-data">
             <p class="formTitle">
                 ¡MODIFICA UN PRODUCTO!
             </p>
@@ -20,38 +20,38 @@
                     <label for="categoria"> <%=productToEdit.id%> / <%=productToEdit.titulo%></label>
                     </p>
                     <!-- <input type="search" id="descripcion" name="descripcion" placeholder="Ingresa ID / Nombre">                    -->
-                    <p>
+<!--                     <p>
                         <label for="nombre">Nuevo ID</label>
                     </p>
                     <input type="text" id="id" name="id" placeholder="<%=productToEdit.id%>">
-            
+             -->
                     <p>
                 <label for="nombre">Nuevo nombre</label>
             </p>
-            <input type="text" id="nombre" name="nombre" placeholder="<%=productToEdit.titulo%>">
+            <input type="text" id="titulo" name="titulo" placeholder="<%=productToEdit.titulo%>" value="<%=productToEdit.titulo%>">
             <p>
                 <label for="descripcion">Nueva descripción:</label>
             </p>
-            <input type="text" id="descripcion" name="descripcion" placeholder="<%=productToEdit.descripcion%>">
+            <input type="text" id="descripcion" name="descripcion" placeholder="<%=productToEdit.descripcion%>" value="<%=productToEdit.titulo%>">
 
             <p>
             <label for="imagen">Nueva foto:</label>
             </p>
             <input type="file" id="foto" name="foto" accept=".jpg, .png, .jpeg">
 
-            <p>
+ <!--            <p>
                 <label for="categoria">Tipo de producto:</label>
                 </p>
                 <select name="cantidad" class="control" >
                     <option value="" disabled selected hidden>Selecciona</option>
                     <option value="vapeador">Vapeador</option>
                     <option value="esencia">Esencia</option>
-            </select>
+            </select> -->
             <div class="priceinfo">
             <p>
                 <label class="precio" for="precio">Precio COP:</label>
                 </p>
-                <input  type="text" id="precio" name="precio"  inputmode="numeric" placeholder="<%=productToEdit.precio%>">
+                <input  type="text" id="precio" name="precio"  inputmode="numeric" placeholder="<%=productToEdit.precio%>" value="<%=productToEdit.precio%>">
                 </div>
             <div class="buttons">
                 <p class="formTitle2">
@@ -60,16 +60,18 @@
                 </p>
                 
                 <p class="formTitle2">
-                <a class="loginBtn" href="/products/<%= productToEdit.id %>"><input class="loginBtn" type="submit" href="/products/<%= productToEdit.id %>" value="Modificar"></a>
+                <button type="submit">MODIFICAR</button>
+                <!-- <a class="loginBtn" href="/products/<%= productToEdit.id %>"><input class="loginBtn" type="submit" href="/products/<%= productToEdit.id %>" value="Modificar"></a> -->
                 </p>
             </div>                  
         </form>
         <div class="buttons">
-        <form action="/product/<%= productToEdit.id %>?_method=DELETE" method="POST">
-            <p class="formTitle2">
-                <a class="loginBtn" href="/product/<%= productToEdit.id %>"><input class="loginBtn" type="submit" href="/product/<%= productToEdit.id %>" value="Eliminar"></a>
-                </p>
-        </form>
+            <form method="POST" action="/products/delete/<%= productToEdit.id %>" >
+                <!--  <p class="formTitle2">
+                     <a class="loginBtn" href="/product/<%= productToEdit.id %>"><input class="loginBtn" type="submit" href="/product/<%= productToEdit.id %>" value="Eliminar"></a>
+                     </p> -->
+                     <button type="submit">ELIMINAR</button>
+             </form>
         </div>
         </fieldset>
         </div>
