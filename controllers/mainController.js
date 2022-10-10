@@ -48,6 +48,7 @@ const mainController={
 			} 
 			return producto;
 		})
+        console.log("prueba")
 		fs.writeFileSync(productsFilePath,JSON.stringify(newProduct,null));
 		res.redirect('/')
 	},
