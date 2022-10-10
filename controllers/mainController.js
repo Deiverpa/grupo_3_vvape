@@ -44,6 +44,7 @@ const mainController = {
       titulo: req.body.titulo,
       descripcion: req.body.descripcion,
       precio: req.body.precio,
+      categoria: req.body.categoria,
       img: image,
       /* stock: req.body.stock, */
       advertencia:
