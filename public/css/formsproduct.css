@@ -186,10 +186,14 @@ input[type="reset" i] {
 input[type="reset" i]:hover {
     background-color:rgba(222,87,100,0.5)
 }
+button[type="submit" ]:hover {
+    background-color:rgba(222,87,100,0.5)
+}
 
 input[type="checkbox" ] {
     padding-left: 10px;
 }
+
 .buttons{
     display: flex;
     width: 100%;
@@ -200,6 +204,14 @@ input[type="checkbox" ] {
     }
 .control:hover{
     cursor: pointer;
+    
+}
+.loginBtn:hover{
+    cursor: pointer;
+    
+}
+buttons:hover{
+    
 }
 @media (min-width:361px){
     .principalForm{

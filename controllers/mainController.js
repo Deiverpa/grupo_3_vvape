@@ -46,7 +46,7 @@ const mainController = {
       precio: req.body.precio,
       categoria: req.body.categoria,
       img: image,
-      /* stock: req.body.stock, */
+      stock: req.body.stock,
       advertencia:
         "**Producto exclusivo para mayores de edad, pueden contener nicotina, la cual es una sustancia adictiva",
     };
@@ -82,6 +82,7 @@ const mainController = {
       precio: req.body.precio,
       img: image,
       stock: req.body.stock,
+      categoria:req.body.categoria,
       advertencia:
         "**Producto exclusivo para mayores de edad, pueden contener nicotina, la cual es una sustancia adictiva",
     };
@@ -100,14 +101,13 @@ const mainController = {
     res.redirect("products");
   }, */
   delete: (req, res) => {
-    console.log("HDFOAFJOAKDFA");
     let id = req.params.id;
     let finalProducts = products.filter((product) => product.id != id);
     fs.writeFileSync(
       productsFilePath,
       JSON.stringify(finalProducts, null, " ")
     );
-    res.redirect("/");
+    res.redirect("/products");
   },
 };
 

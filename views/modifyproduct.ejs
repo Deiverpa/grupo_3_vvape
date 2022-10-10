@@ -47,11 +47,17 @@
                     <option value="vapeador">Vapeador</option>
                     <option value="esencia">Esencia</option>
             </select>
+            <div class="cantidad">
+                <p>
+                    <label for="stock">Cantidad disponible:</label>
+                    </p>
+                    <input type="number" id="stock" name="stock" required autocomplete="on" inputmode="numeric">
+                </div> 
             <div class="priceinfo">
             <p>
                 <label class="precio" for="precio">Precio COP:</label>
                 </p>
-                <input  type="text" id="precio" name="precio"  inputmode="numeric" placeholder="<%=productToEdit.precio%>" value="<%=productToEdit.precio%>">
+                <input  type="number" id="precio" name="precio"  inputmode="numeric" placeholder="<%=productToEdit.precio%>" value="<%=productToEdit.precio%>">
                 </div>
             <div class="buttons">
                 <p class="formTitle2">
@@ -60,7 +66,7 @@
                 </p>
                 
                 <p class="formTitle2">
-                <button type="submit">MODIFICAR</button>
+                <a class="loginBtn"><button type="submit" class="loginBtn">Modificar</button></a>
                 <!-- <a class="loginBtn" href="/products/<%= productToEdit.id %>"><input class="loginBtn" type="submit" href="/products/<%= productToEdit.id %>" value="Modificar"></a> -->
                 </p>
             </div>                  
@@ -70,7 +76,7 @@
                 <!--  <p class="formTitle2">
                      <a class="loginBtn" href="/product/<%= productToEdit.id %>"><input class="loginBtn" type="submit" href="/product/<%= productToEdit.id %>" value="Eliminar"></a>
                      </p> -->
-                     <button type="submit">ELIMINAR</button>
+                     <a class="loginBtn" ><button class="loginBtn" type="submit" >Eliminar</button></a>
              </form>
         </div>
         </fieldset>
