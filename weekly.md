@@ -29,3 +29,9 @@
             - Mover imagen default a la carpeta de imagenes
             - Dificultad para llevar a los productos la selección de la lista desplegable / implementación de rutas put y delete
             
+10/10 - EB: - Estilos formularios productos
+            - Eliminacion campo id
+            - Redirect del delete a /products
+            - Incluir categoria en el products.json
+            - Cambios campos numericos
+            
