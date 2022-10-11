@@ -34,8 +34,8 @@ const mainController = {
     let image;
     if (req.files[0] != undefined) {
       image = req.files[0].filename;
-    } else if (productToUpdate.image != undefined) {
-      image = productToUpdate.image;
+    } else if (productToUpdate.img != undefined) {
+      image = productToUpdate.img;
     } else {
       image = "default-image.jpeg";
     }
@@ -59,7 +59,7 @@ const mainController = {
     console.log(newProduct);
     console.log("prueba2");
     fs.writeFileSync(productsFilePath, JSON.stringify(newProduct, null));
-    res.redirect("/");
+    res.redirect("/products");
   },
   product: (req, res) => {
     let producto = products.find((producto) => producto.id == req.params.id);
