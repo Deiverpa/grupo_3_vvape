@@ -4,6 +4,8 @@ const path = require("path");
 const productsFilePath = path.join(__dirname, "../data/products.json");
 const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
 
+const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+
 const mainController = {
   index: (req, res) => {
     res.render("index");
@@ -75,11 +77,13 @@ const mainController = {
     } else {
       image = "default-image.jpeg";
     }
+    let precio= req.body.precio.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+    
     let newProduct = {
       id: products[products.length - 1].id + 1,
       titulo: req.body.titulo,
       descripcion: req.body.descripcion,
-      precio: req.body.precio,
+      precio: precio,
       img: image,
       stock: req.body.stock,
       categoria:req.body.categoria,

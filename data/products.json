@@ -73,6 +73,15 @@
     "stock": "2",
     "categoria": "vapeador",
     "advertencia": "**Producto exclusivo para mayores de edad, pueden contener nicotina, la cual es una sustancia adictiva"
+  },
+  {
+    "id": 10,
+    "titulo": "gdfgdf",
+    "descripcion": "sdgfsdf",
+    "precio": "8.541.454",
+    "img": "default-image.jpeg",
+    "stock": "485",
+    "categoria": "vapeador",
+    "advertencia": "**Producto exclusivo para mayores de edad, pueden contener nicotina, la cual es una sustancia adictiva"
   }
-  
 ]
