@@ -50,15 +50,19 @@ form{
     padding-right: 5%;
 }
 
-.registerForm{
-    margin-bottom: 7vh;
+.formLogin{
+    margin-top: 15vh;
+    margin-bottom: 15vh;
 }
+/* .registerForm{
+    margin-bottom: 7vh;
+} */
 
 .principalForm{
     display: flex;
     justify-content: center;
-    margin-top: 10vh;
-    margin-bottom: 5vh;
+    margin-top: 12vh;
+    margin-bottom: 12vh;
 }
 
 .remindUserC{
