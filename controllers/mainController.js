@@ -41,11 +41,13 @@ const mainController = {
     } else {
       image = "default-image.jpeg";
     }
+    let precio= "$" + req.body.precio.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+
     let NewProductToUpdate = {
       id: productToUpdate.id,
       titulo: req.body.titulo,
       descripcion: req.body.descripcion,
-      precio: req.body.precio,
+      precio: precio,
       categoria: req.body.categoria,
       img: image,
       stock: req.body.stock,
@@ -77,7 +79,7 @@ const mainController = {
     } else {
       image = "default-image.jpeg";
     }
-    let precio= req.body.precio.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+    let precio= "$" + req.body.precio.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
     
     let newProduct = {
       id: products[products.length - 1].id + 1,
