@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use (express.static(publicPath))
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use('/users/', usersRouter);
 app.use(methodOverride('_method')); 
 
 app.set('view engine', 'ejs');

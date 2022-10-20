@@ -23,19 +23,19 @@ let upload = multer({ storage: storage });
 // Principal
 router.get("/", mainController.index);
 
-// usuarios
-router.get("/register", usersController.register);
-router.get("/login", usersController.login);
-router.post("/register", usersController.register);
-router.post("/login", usersController.login);
+// // usuarios
+// router.get("/register", usersController.register);
+// router.get("/login", usersController.login);
+// router.post("/register", usersController.register);
+// router.post("/login", usersController.login);
 
 // productos
 router.get("/products", productsController.products);
 // productos detallados
 router.get("/products/:id", productsController.product);
 
-// shoppingK
-router.get("/shoppingcart", usersController.shoppingcart);
+// // shoppingK
+// router.get("/shoppingcart", usersController.shoppingcart);
 
 // createproduct
 router.get("/newproduct", productsController.newproduct);
