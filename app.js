@@ -3,6 +3,7 @@ const path = require ("path");
 const methodOverride =  require('method-override');
 const createError = require('http-errors');
 const app = express ();
+const session = require('express-session');
 
 const indexRouter = require('./routes/index')
 const usersRouter = require('./routes/users')
@@ -14,7 +15,9 @@ app.use(express.urlencoded({ extended: false }));
 app.use (express.static(publicPath))
 app.use('/', indexRouter);
 app.use('/users/', usersRouter);
-app.use(methodOverride('_method')); 
+app.use(methodOverride('_method'));
+app.use(session({secret:'vvape', resave: false, saveUninitialized: true}));
+
 
 app.set('view engine', 'ejs');
 
