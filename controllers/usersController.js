@@ -14,6 +14,9 @@ const usersController = {
   shoppingcart: (req, res) => {
     res.render("shoppingcart");
   },
+  profile: (req, res) => {
+    res.render("profile");
+  },
   store: (req, res) => {
     let image;
     if (req.files[0] != undefined) {

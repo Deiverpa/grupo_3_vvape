@@ -33,7 +33,13 @@ router.get("/login", usersController.login);
 router.post("/login", usersController.login);
 // router.post("/register", usersController.register);
 
+//PerfilUsuario
+router.get("/profile", usersController.profile);
+// router.post("/login", usersController.login);
+
 // shoppingK
 router.get("/shoppingcart", usersController.shoppingcart);
+
+
 
 module.exports = router;
