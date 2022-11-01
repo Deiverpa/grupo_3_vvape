@@ -21,12 +21,13 @@ const usersController = {
     res.render("profile");
   },
   store: (req, res) => {
+    // console.log("hola");
     let image;
-    if (req.files[0] != undefined) {
-      image = req.files[0].filename;
-    } else {
-      image = "uDefault-image.jpeg";
-    }    
+      if (req.files[0] != undefined) {
+        image = req.files[0].filename;
+      } else {
+        image = "uDefault-image.jpeg";
+      }    
     let hashPassword = bcrypt.hashSync(req.body.password,10);
     let newUser = {
       id: users[users.length - 1].id + 1,
@@ -36,12 +37,13 @@ const usersController = {
       email: req.body.email,
       password: hashPassword,
       user_type: req.body.user_type,
-      img: image,
+      img: image
     };
+    
     users.push(newUser);
     fs.writeFileSync(usersFilePath, JSON.stringify(users, null));
-    res.redirect("/users/profile");
-  }
+    res.redirect("/users/profile");}
+
 };
 
 module.exports = usersController;

@@ -25,7 +25,8 @@ let upload = multer({ storage: storage });
 
 // createUsers
 router.get("/register", usersController.register);
-router.post("/register", upload.any(), usersController.store);
+// router.post("/register", upload.any(), usersController.store);
+router.post("/profile", upload.any(),usersController.store);
 
 // usuarios
 
@@ -39,7 +40,5 @@ router.get("/profile", usersController.profile);
 
 // shoppingK
 router.get("/shoppingcart", usersController.shoppingcart);
-
-
 
 module.exports = router;
