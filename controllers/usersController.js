@@ -42,8 +42,12 @@ const usersController = {
     
     users.push(newUser);
     fs.writeFileSync(usersFilePath, JSON.stringify(users, null));
-    res.redirect("/users/profile");}
+    res.redirect("/users/profile");
+  
+  }
 
 };
+
+
 
 module.exports = usersController;
