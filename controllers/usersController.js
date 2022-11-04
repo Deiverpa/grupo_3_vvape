@@ -18,7 +18,10 @@ const usersController = {
     res.render("shoppingcart");
   },
   profile: (req, res) => {
-    res.render("profile");
+    let registeredUser = users.find(
+      (user) => user.id == req.params.id
+    );
+    res.render("profile", { registeredUser });
   },
   store: (req, res) => {
     // console.log("hola");
@@ -42,7 +45,7 @@ const usersController = {
     
     users.push(newUser);
     fs.writeFileSync(usersFilePath, JSON.stringify(users, null));
-    res.redirect("/users/profile");}
+    res.redirect("/users/profile/:id");}
 
 };
 
