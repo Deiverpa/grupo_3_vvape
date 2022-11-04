@@ -54,6 +54,11 @@ let upload = multer({ storage: storage });
 // RUTAS
 
 /* GET users listing. */
+router.get('/', function(req, res, next) {
+  res.send('respond with a resource');
+});
+
+
 
 // createUsers
 router.get("/register", usersController.register);

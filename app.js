@@ -4,6 +4,7 @@ const methodOverride =  require('method-override');
 const createError = require('http-errors');
 const app = express ();
 const session = require('express-session');
+const cookieParser = require('cookie-parser');
 
 const indexRouter = require('./routes/index')
 const usersRouter = require('./routes/users')
@@ -17,7 +18,7 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use(methodOverride('_method'));
 app.use(session({secret:'vvape', resave: false, saveUninitialized: true}));
-
+app.use(cookieParser());
 
 app.set('view engine', 'ejs');
 
