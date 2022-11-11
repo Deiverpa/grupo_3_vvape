@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { body } = require('express-validator')
+const { body,check } = require('express-validator')
 
 // MULTER
 
@@ -44,7 +44,7 @@ router.get('/', function(req, res, next) {
 
 // createUsers
 router.get("/register", usersController.register);
-router.post("/register",validations,usersController.processRegister);
+router.post("/register",validations,usersController.store);
 
 // usuarios
 

@@ -11,20 +11,19 @@ const usersController = {
   register: (req, res) => {
     res.render("register");
   },
-  processRegister:(req, res) =>{
-    const resultValidation = validationResult(req);
-    console.log(resultValidation);
-    if(resultValidation.errors.length>0){
-      return res.render("register",{
-        errors: resultValidation.mapped(),
-        oldData: req.body     
-      });
-    }
-    return res.send('Ok, las validaciones se pasaron y no tienes errores');
-  },
-  store: (req, res) => {
-    // console.log("hola");
-    let image;
+  // processRegister:(req, res) =>{
+  //   // const resultValidation = validationResult(req);
+  //   console.log(resultValidation);
+  //   if(resultValidation.errors.length>0){
+  //     return res.render("register",{
+  //       errors: resultValidation.mapped(),
+  //       oldData: req.body     
+  //     });
+  //   }
+  //   return res.send('Ok, las validaciones se pasaron y no tienes errores');
+  // }
+  store: (req, res, next) => {
+      let image;
       if (req.files[0] != undefined) {
         image = req.files[0].filename;
       } else {
@@ -41,10 +40,15 @@ const usersController = {
       user_type: req.body.user_type,
       img: image
     };
-    
+    let errors = validationResult(req)
+    console.log(errors);
+    if(!errors.isEmpty()){
+      return res.render('register', {errors:errors.errors})
+  } else{
     users.push(newUser);
     fs.writeFileSync(usersFilePath, JSON.stringify(users, null));
-    res.redirect("/products");}, //PENDIENTE CAMBIAR REDIRECT
+    res.redirect("/products")};
+  }, //PENDIENTE CAMBIAR REDIRECT
   login: (req, res) => {
     res.render("login");
   },
