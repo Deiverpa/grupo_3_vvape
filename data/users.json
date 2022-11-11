@@ -1,1 +1,83 @@
+<<<<<<< Updated upstream
 [{"date":"1/2/2022","nombre":"Patsy","apellido":"Piser","email":"ppiser0@reverbnation.com","password":"twnkpicrxek","id":1,"user_type":"admin","img":"https://robohash.org/fugavoluptatesimilique.png?size=50x50&set=set1"},{"date":"10/19/2021","nombre":"Karilynn","apellido":"Sivier","email":"ksivier1@apache.org","password":"yn0WKL","id":2,"user_type":"client","img":"https://robohash.org/sitconsequaturrem.png?size=50x50&set=set1"},{"date":"3/22/2022","nombre":"Johnathon","apellido":"Gulleford","email":"jgulleford2@typepad.com","password":"2ZKHyrFtKw","id":3,"user_type":"admin","img":"https://robohash.org/quiafacereomnis.png?size=50x50&set=set1"},{"date":"7/29/2022","nombre":"Diandra","apellido":"Jehaes","email":"djehaes3@friendfeed.com","password":"LpDJSUzX20A8","id":4,"user_type":"admin","img":"https://robohash.org/utundedeserunt.png?size=50x50&set=set1"},{"date":"8/27/2022","nombre":"Leeland","apellido":"Dunkersley","email":"ldunkersley4@apache.org","password":"0Z6EDKPG","id":5,"user_type":"admin","img":"https://robohash.org/insitnatus.png?size=50x50&set=set1"},{"id":6,"date":"2022-11-02","nombre":"Deiver","apellido":"Peña","email":"deipa280@hotmail.com","password":"$2a$10$xxgwwI6xSwzWBFLArdtUP.ZV8KgRShOl/VOzxO/NpUuxXREGR.1NO","img":"user_1667437697421.png"},{"id":7,"date":"2022-11-10","nombre":"Deiver","apellido":"Peña","email":"deipa280@hotmail.com","password":"$2a$10$nJ.NJyvVBbVllO8lKKneuOdHUACHgYpIWBIfTuMB.HDC8hlIlWjIG","img":"uDefault-image.jpeg"},{"id":8,"date":"2022-11-03","nombre":"Deiver","apellido":"Peña","email":"deipa280@hotmail.com","password":"$2a$10$Q7TL/W/w/AhfhT8uVclVoOvF8oEB8frGyKfS5fBvoUlWmTdTFM0wm","img":"uDefault-image.jpeg"}]
+=======
+[
+  {
+    "date": "1/2/2022",
+    "nombre": "Patsy",
+    "apellido": "Piser",
+    "email": "ppiser0@reverbnation.com",
+    "password": "twnkpicrxek",
+    "id": 1,
+    "user_type": "admin",
+    "img": "https://robohash.org/fugavoluptatesimilique.png?size=50x50&set=set1"
+  },
+  {
+    "date": "10/19/2021",
+    "nombre": "Karilynn",
+    "apellido": "Sivier",
+    "email": "ksivier1@apache.org",
+    "password": "yn0WKL",
+    "id": 2,
+    "user_type": "client",
+    "img": "https://robohash.org/sitconsequaturrem.png?size=50x50&set=set1"
+  },
+  {
+    "date": "3/22/2022",
+    "nombre": "Johnathon",
+    "apellido": "Gulleford",
+    "email": "jgulleford2@typepad.com",
+    "password": "2ZKHyrFtKw",
+    "id": 3,
+    "user_type": "admin",
+    "img": "https://robohash.org/quiafacereomnis.png?size=50x50&set=set1"
+  },
+  {
+    "date": "7/29/2022",
+    "nombre": "Diandra",
+    "apellido": "Jehaes",
+    "email": "djehaes3@friendfeed.com",
+    "password": "LpDJSUzX20A8",
+    "id": 4,
+    "user_type": "admin",
+    "img": "https://robohash.org/utundedeserunt.png?size=50x50&set=set1"
+  },
+  {
+    "date": "8/27/2022",
+    "nombre": "Leeland",
+    "apellido": "Dunkersley",
+    "email": "ldunkersley4@apache.org",
+    "password": "0Z6EDKPG",
+    "id": 5,
+    "user_type": "admin",
+    "img": "https://robohash.org/insitnatus.png?size=50x50&set=set1"
+  },
+  {
+    "id": 6,
+    "date": "2022-11-02",
+    "nombre": "prueba",
+    "apellido": "dsfds",
+    "email": "estebarile@gmail.com",
+    "password": "$2a$10$3X4/r5oSkaKSTdKbN8A3Ke85Mo1pTojQhSWJYsRh.fO8HtcUIcd52",
+    "img": "user_1667526687343.jpg"
+  },
+  {
+    "id": 7,
+    "date": "2022-11-14",
+    "nombre": "prueba",
+    "apellido": "dsfds",
+    "email": "estebarile@gmail.com",
+    "password": "$2a$10$qcf9Ugn6HmQVRvpdavk3p.QqR8dVx8BB0..1fNvXVhtCG4JETNRYO",
+    "img": "user_1667527116407.jpg"
+  },
+  {
+    "id": 8,
+    "date": "2022-11-09",
+    "nombre": "Estefania",
+    "apellido": "Bautista",
+    "email": "ebautista@123.com",
+    "password": "$2a$10$ldKFbymBxnPtIEwjw6EgkuN0WxmHUExrEEtY4acheg0IEeNNOqvUW",
+    "img": "user_1668125044613.jpg"
+  }
+]
+>>>>>>> Stashed changes
