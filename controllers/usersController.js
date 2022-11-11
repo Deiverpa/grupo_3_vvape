@@ -11,17 +11,16 @@ const usersController = {
   register: (req, res) => {
     res.render("register");
   },
-  login: (req, res) => {
-    res.render("login");
-  },
-  shoppingcart: (req, res) => {
-    res.render("shoppingcart");
-  },
-  profile: (req, res) => {
-    let registeredUser = users.find(
-      (user) => user.id == req.params.id
-    );
-    res.render("profile", { registeredUser });
+  processRegister:(req, res) =>{
+    const resultValidation = validationResult(req);
+    console.log(resultValidation);
+    if(resultValidation.errors.length>0){
+      return res.render("register",{
+        errors: resultValidation.mapped(),
+        oldData: req.body     
+      });
+    }
+    return res.send('Ok, las validaciones se pasaron y no tienes errores');
   },
   store: (req, res) => {
     // console.log("hola");
@@ -45,7 +44,19 @@ const usersController = {
     
     users.push(newUser);
     fs.writeFileSync(usersFilePath, JSON.stringify(users, null));
-    res.redirect("/users/profile/:id");}
+    res.redirect("/products");}, //PENDIENTE CAMBIAR REDIRECT
+  login: (req, res) => {
+    res.render("login");
+  },
+  shoppingcart: (req, res) => {
+    res.render("shoppingcart");
+  },
+  profile: (req, res) => {
+    let registeredUser = users.find(
+      (user) => user.id == req.params.id
+    );
+    res.render("profile", { registeredUser });
+  } 
 
 };
 

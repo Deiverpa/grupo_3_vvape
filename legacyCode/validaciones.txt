@@ -1,0 +1,17 @@
+ // body('edad').notEmpty().withMessage('debe ser numero').custom(value =>{
+  //   if(isNaN(value)||value.isLength<1){
+  //     throw new Error('No es un numero')
+  //   }else{
+  //     return true
+  //   }
+  // }),
+
+  // VALIDACIONES
+// let d = new Date();
+//      let year = d.getFullYear();
+//      let month = d.getMonth();
+//      let day = d.getDate();
+//      let cA = new Date(year - 18, month, day).toDateString();
+//      let cB = new Date(year - 65, month, day).toDateString();
+
+// req.checkBody('datadenasc','Error: Invalid Date of Birth!').isBefore(cA).isAfter(cB);
