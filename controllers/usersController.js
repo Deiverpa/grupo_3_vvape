@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 const bcrypt = require("bcryptjs");
 const session = require("express-session");
-const {validationResult}= require('express-validator');
+const {validationResult} = require('express-validator');
 
 const usersFilePath = path.join(__dirname, "../data/users.json");
 const users = JSON.parse(fs.readFileSync(usersFilePath, "utf-8"));
@@ -23,6 +23,7 @@ const usersController = {
   //   return res.send('Ok, las validaciones se pasaron y no tienes errores');
   // }
   store: (req, res, next) => {
+    let errors = validationResult(req)
       let image;
       if (req.files[0] != undefined) {
         image = req.files[0].filename;
@@ -40,8 +41,7 @@ const usersController = {
       user_type: req.body.user_type,
       img: image
     };
-    let errors = validationResult(req)
-    console.log(errors);
+    console.log(errors.errors);
     if(!errors.isEmpty()){
       return res.render('register', {errors:errors.errors})
   } else{

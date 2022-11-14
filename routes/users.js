@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const { body,check } = require('express-validator')
+const usersController = require("../controllers/usersController");
 
 // MULTER
 
@@ -21,16 +22,16 @@ let storage = multer.diskStorage({
 });
 
 let upload = multer({ storage: storage });
-const usersController = require("../controllers/usersController");
+
 
 //VALIDACION FORMULARIO REGISTRO USUARIOS
 const validations = [
-  body('date').notEmpty().withMessage(''),
-  body('nombre').notEmpty().withMessage('Escribí tu nombre'),
-  body('apellido').notEmpty().withMessage('Escribí tu apellido'),
-  body('email').isEmail().withMessage('Escribe un email valido'),
-  body('password').notEmpty().isLength({min: 8}).withMessage('Tu contraseña debe contener al menos 8 caracteres'),
- ]
+  check('date').notEmpty().withMessage(''),
+  check('nombre').notEmpty().withMessage('Escribí tu nombre'),
+  check('apellido').notEmpty().withMessage('Escribí tu apellido'),
+  check('email').isEmail().withMessage('Escribe un email valido'),
+  check('password').notEmpty().isLength({min: 8}).withMessage('Tu contraseña debe contener al menos 8 caracteres')
+]
 
 // const mainController = require("../controllers/mainController");
 // const productsController = require("../controllers/productsController");
@@ -44,7 +45,13 @@ router.get('/', function(req, res, next) {
 
 // createUsers
 router.get("/register", usersController.register);
-router.post("/register",validations,usersController.store);
+router.post("/register",[
+  check('date').notEmpty().withMessage(''),
+  body('nombre').isLength({min:1}).withMessage('Escribí tu nombre'),
+  check('apellido').notEmpty().withMessage('Escribí tu apellido'),
+  check('email').isEmail().withMessage('Escribe un email valido'),
+  check('password').notEmpty().isLength({min: 8}).withMessage('Tu contraseña debe contener al menos 8 caracteres')
+],usersController.store);
 
 // usuarios
 
