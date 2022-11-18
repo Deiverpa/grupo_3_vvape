@@ -15,7 +15,7 @@
             </p>
             <div class="flexForm">
             <p>
-                <label for="email">Email o Usuario:</label>
+                <label for="email">Email:</label>
             </p>
             <input type="email" id="nombre" name="email"  autocomplete="on">
             <br><% if (locals.errors && errors.email) { %>
@@ -27,6 +27,9 @@
             <input type="password" id="nombre" name="password"  autocomplete="on">
             <div class="remindUserC">Recordarme<input type="checkbox" name="remindUser" id="remindUser"></div>
             <br>
+            <% if (locals.errors && errors.password) { %>
+                <div class="errorsMsg"><%= errors.password.msg %> </div><br>
+            <% } %>
             <!-- <p> <a id="formA" href="#"> ¿Olvidaste tu contraseña?  </a></p> -->
             </div>
             <a class="loginBtn" href="/shoppingcart"><input class="loginBtn" type="submit" href="/shoppingcart" value="INGRESAR"></a>

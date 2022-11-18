@@ -57,9 +57,18 @@ const usersController = {
   loginProcess:(req,res)=>{
    let userToLogin=users.find((user)=>user.email==req.body.email);
     if(userToLogin){
-      return res.send(userToLogin)
-    }
-
+      let passwordOk=bcryptjs.compareSync(req.body.password,userToLogin.password);
+      if(passwordOk){
+        res.redirect('/users/profile')
+      }
+      return res.render("login", {
+        errors:{
+          password:{
+            msg:'Las credenciales son incorrectas'
+          }
+        }
+       }) 
+      }
    return res.render("login", {
     errors:{
       email:{
@@ -67,7 +76,6 @@ const usersController = {
       }
     }
    })
-
   },
   shoppingcart: (req, res) => {
     res.render("shoppingcart");

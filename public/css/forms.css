@@ -10,7 +10,7 @@
     width: 100%;
 }
 .errorsMsg{
-    color :red;
+    color :rgba(222,87,100);
     text-align: center;
     font-weight: bold;
     font-size: 0.8rem;
