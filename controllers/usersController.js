@@ -1,11 +1,13 @@
 const fs = require("fs");
 const path = require("path");
-const bcrypt = require("bcryptjs");
+const bcryptjs = require("bcryptjs");
 const session = require("express-session");
 const {validationResult} = require('express-validator');
 
 const usersFilePath = path.join(__dirname, "../data/users.json");
 const users = JSON.parse(fs.readFileSync(usersFilePath, "utf-8"));
+
+// let hash = 
 
 const usersController = {
   register: (req, res) => {
@@ -30,7 +32,7 @@ const usersController = {
       } else {
         image = "uDefault-image.jpeg";
       }
-    let hashPassword = bcrypt.hashSync(req.body.password[0],10);
+    let hashPassword = bcryptjs.hashSync(req.body.password[0],10);
     let newUser = {
       id: users[users.length - 1].id + 1,
       date: req.body.date,
@@ -52,14 +54,30 @@ const usersController = {
   login: (req, res) => {
     res.render("login");
   },
+  loginProcess:(req,res)=>{
+   let userToLogin=users.find((user)=>user.email==req.body.email);
+    if(userToLogin){
+      return res.send(userToLogin)
+    }
+
+   return res.render("login", {
+    errors:{
+      email:{
+        msg:'Por favor ingresa un email válido'
+      }
+    }
+   })
+
+  },
   shoppingcart: (req, res) => {
     res.render("shoppingcart");
   },
   profile: (req, res) => {
-    let registeredUser = users.find(
-      (user) => user.id == req.params.id
-    );
-    res.render("profile", { registeredUser });
+    // let registeredUser = users.find(
+    //   (user) => user.id == req.params.id
+    // );
+    // res.render("profile", { registeredUser });
+    res.render('profile')
   } 
 
 };

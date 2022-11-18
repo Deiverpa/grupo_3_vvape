@@ -56,7 +56,7 @@ router.post("/register",[
 // usuarios
 
 router.get("/login", usersController.login);
-router.post("/login", usersController.login);
+router.post("/login", usersController.loginProcess);
 // router.post("/register", usersController.register);
 
 //PerfilUsuario

@@ -9,6 +9,13 @@
     bottom: 0;
     width: 100%;
 }
+.errorsMsg{
+    color :red;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.8rem;
+    
+}
 
 footer{
     height: 10vh;
