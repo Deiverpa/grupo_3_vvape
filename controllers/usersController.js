@@ -32,7 +32,7 @@ const usersController = {
       } else {
         image = "uDefault-image.jpeg";
       }
-    let hashPassword = bcryptjs.hashSync(req.body.password[0],10);
+    let hashPassword = bcryptjs.hashSync(req.body.password,10);
     let newUser = {
       id: users[users.length - 1].id + 1,
       date: req.body.date,
@@ -43,7 +43,7 @@ const usersController = {
       user_type: req.body.user_type,
       img: image
     };
-    console.log(errors.errors);
+    // console.log(errors.errors);
     if(!errors.isEmpty()){
       return res.render('register', {errors:errors.errors})
   } else{
@@ -56,8 +56,10 @@ const usersController = {
   },
   loginProcess:(req,res)=>{
    let userToLogin=users.find((user)=>user.email==req.body.email);
+    console.log(bcryptjs.compareSync("vapo",userToLogin.password))
     if(userToLogin){
-      let passwordOk=bcryptjs.compareSync(req.body.password,userToLogin.password);
+      let passwordOk = bcryptjs.compareSync(req.body.password,userToLogin.password);
+      // console.log(passwordOk);
       if(passwordOk){
         res.redirect('/users/profile')
       }
