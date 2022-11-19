@@ -17,14 +17,14 @@
             <p>
                 <label for="email">Email:</label>
             </p>
-            <input type="email" id="nombre" name="email"  autocomplete="on">
+            <input type="email" id="nombre" name="email"  autocomplete="on" required>
             <br><% if (locals.errors && errors.email) { %>
                 <div class="errorsMsg"><%= errors.email.msg %> </div>
             <% } %>
             <p>
                 <label for="password">Contraseña:</label>
             </p>
-            <input type="password" id="nombre" name="password"  autocomplete="on">
+            <input type="password" id="nombre" name="password"  autocomplete="on" required>
             <div class="remindUserC">Recordarme<input type="checkbox" name="remindUser" id="remindUser"></div>
             <br>
             <% if (locals.errors && errors.password) { %>

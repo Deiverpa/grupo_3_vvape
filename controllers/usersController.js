@@ -54,11 +54,9 @@ const usersController = {
     res.render("login");
   },
   loginProcess:(req,res)=>{
-   let userToLogin=users.find((user)=>user.email==req.body.email);
-    console.log(bcryptjs.compareSync("vapo",userToLogin.password))
+    let userToLogin=users.find((user)=>user.email==req.body.email);
     if(userToLogin){
       let passwordOk = bcryptjs.compareSync(req.body.password,userToLogin.password);
-      // console.log(passwordOk);
       if(passwordOk){
         // req.session.userLogged=userToLogin;
         res.redirect('/users/profile')
@@ -69,15 +67,15 @@ const usersController = {
             msg:'Las credenciales son incorrectas'
           }
         }
-       }) 
+      }) 
       }
-   return res.render("login", {
+    return res.render("login", {
     errors:{
       email:{
         msg:'Por favor ingresa un email válido'
       }
     }
-   })
+  })
   },
   shoppingcart: (req, res) => {
     res.render("shoppingcart");
