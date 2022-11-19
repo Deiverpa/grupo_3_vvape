@@ -1,13 +1,11 @@
 const fs = require("fs");
 const path = require("path");
 const bcryptjs = require("bcryptjs");
-const session = require("express-session");
+// const session = require("express-session");
 const {validationResult} = require('express-validator');
 
 const usersFilePath = path.join(__dirname, "../data/users.json");
 const users = JSON.parse(fs.readFileSync(usersFilePath, "utf-8"));
-
-// let hash = 
 
 const usersController = {
   register: (req, res) => {
@@ -50,8 +48,9 @@ const usersController = {
     users.push(newUser);
     fs.writeFileSync(usersFilePath, JSON.stringify(users, null));
     res.redirect("/products")};
-  }, //PENDIENTE CAMBIAR REDIRECT
+  }, //PENDIENTE CAMBIAR REDIRECT!!!!!!!!!!!!
   login: (req, res) => {
+    
     res.render("login");
   },
   loginProcess:(req,res)=>{
@@ -61,6 +60,7 @@ const usersController = {
       let passwordOk = bcryptjs.compareSync(req.body.password,userToLogin.password);
       // console.log(passwordOk);
       if(passwordOk){
+        // req.session.userLogged=userToLogin;
         res.redirect('/users/profile')
       }
       return res.render("login", {
@@ -87,6 +87,8 @@ const usersController = {
     //   (user) => user.id == req.params.id
     // );
     // res.render("profile", { registeredUser });
+    // console.log('Estás logeado');
+    // // console.log(req.session);
     res.render('profile')
   } 
 

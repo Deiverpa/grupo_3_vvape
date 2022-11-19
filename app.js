@@ -17,7 +17,12 @@ app.use (express.static(publicPath))
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use(methodOverride('_method'));
-app.use(session({secret:'vvape', resave: false, saveUninitialized: true}));
+// app.use(session({secret:'VAPPE', resave: false, saveUninitialized: true}));
+app.use(session({
+	secret: "Shhh, It's a secret",
+	resave: false,
+	saveUninitialized: false,
+}));
 app.use(cookieParser());
 
 app.set('view engine', 'ejs');
